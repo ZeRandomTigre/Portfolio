@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="6f204bf6-2a87-4670-8673-ab180afb5b2f" name="Cancel Ticket" linkedPackageId="fe212838-5518-4050-ba78-a732d30ea330" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cbfb37e5-7fbb-4d4d-9a0f-0b186d004176">
+      <profileInstance Id="73f7f6d8-8e50-4380-a95a-10548ec86df4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fb499d34-ac6e-474a-9baf-db15c88f3d41">
+      <profileInstance Id="a9c8245d-d292-4864-b878-871b6c2c335f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2b0e557c-6828-4edc-8f2c-5f8b6c5e4b17" name="Cancel Ticket" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="9ef0f2b3-49fa-417e-b6fe-e09feb993227" />
+        <nodes>
+          <initialNode Id="bb962e21-978d-49bf-a2f8-46ca47423bd2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="dd02c148-c0cd-4982-9d32-58c3e6f67d53" />
+            <flowNodeTargets>
+              <controlFlow Id="0d0a509e-c286-4529-9bde-31975c569af8" isLeaf="false">
+                <opaqueActionMoniker Id="e01cb2b4-3aab-4e91-993d-0be60ce02036" LastKnownName="Enter Customer Details" />
+                <elementDefinition Id="24906e35-f31b-4053-b277-8fe5648bacbf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e01cb2b4-3aab-4e91-993d-0be60ce02036" name="Enter Customer Details" isLeaf="false">
+            <elementDefinition Id="f32486a6-dd1f-4524-bf69-eaf75a444ea0" />
+            <flowNodeTargets>
+              <controlFlow Id="8fed09b1-0e7b-41f1-8bd5-26df1b7d1582" isLeaf="false">
+                <opaqueActionMoniker Id="e24bd057-7b0f-4074-b83f-770218c723f6" LastKnownName="Delete Customer Reservervation" />
+                <elementDefinition Id="a1c73056-87c9-4b21-bc09-8ac2c811d80a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e24bd057-7b0f-4074-b83f-770218c723f6" name="Delete Customer Reservervation" isLeaf="false">
+            <elementDefinition Id="f0270fbf-8770-4404-bebd-683774dd70d4" />
+            <flowNodeTargets>
+              <controlFlow Id="05acb890-e74a-4906-a7d6-cc274f37dafc" isLeaf="false">
+                <decisionNodeMoniker Id="0174785b-22e6-46c7-b797-b60d66615425" LastKnownName="Decision1" />
+                <elementDefinition Id="ca34ab6f-438d-4e75-8202-58ebe624c02d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="0174785b-22e6-46c7-b797-b60d66615425" name="Decision1" isLeaf="false">
+            <elementDefinition Id="128065b6-ab67-4e27-b0c3-14536b63fbaa" />
+            <flowNodeTargets>
+              <controlFlow Id="e2feb6ea-edf4-4f62-9015-d62f2882fea6" guard="Deposit is not void" isLeaf="false">
+                <opaqueActionMoniker Id="1ad20eaf-67e6-4cbe-962b-10e41a9a2879" LastKnownName="Refund inc. Deposit" />
+                <elementDefinition Id="7aceb215-7ded-4546-ad20-84ea946f5c6c" />
+              </controlFlow>
+              <controlFlow Id="a59ed6b1-3ad2-496c-a26c-606b57df0f85" guard="Deposit void" isLeaf="false">
+                <opaqueActionMoniker Id="2b41d237-8e1c-468e-87b0-9e490232fe09" LastKnownName="Refund bar Deposit" />
+                <elementDefinition Id="7a292e4d-1634-44e5-a326-de20db0a5137" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="1ad20eaf-67e6-4cbe-962b-10e41a9a2879" name="Refund inc. Deposit" isLeaf="false">
+            <elementDefinition Id="d4f856cc-62a1-401a-9ff8-5b34ba97435a" />
+            <flowNodeTargets>
+              <controlFlow Id="57939e10-79a1-4505-9259-7c1f8536afe2" isLeaf="false">
+                <mergeNodeMoniker Id="bd158003-ed9f-43a2-a492-ccac637f97b3" LastKnownName="Merge1" />
+                <elementDefinition Id="2d86d2a4-3372-4582-9dee-53795008cc3d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2b41d237-8e1c-468e-87b0-9e490232fe09" name="Refund bar Deposit" isLeaf="false">
+            <elementDefinition Id="8c60ccbf-f0ef-4896-a479-c98ea5855f4e" />
+            <flowNodeTargets>
+              <controlFlow Id="444f0673-a6ad-49a2-b366-faceeabcfdc4" isLeaf="false">
+                <mergeNodeMoniker Id="bd158003-ed9f-43a2-a492-ccac637f97b3" LastKnownName="Merge1" />
+                <elementDefinition Id="5dbf1904-20fc-46b4-a68a-86483e54480e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="bd158003-ed9f-43a2-a492-ccac637f97b3" name="Merge1" isLeaf="false">
+            <elementDefinition Id="67e74de0-d45e-440c-af62-719de98d3635" />
+            <flowNodeTargets>
+              <controlFlow Id="6bc60c85-2a01-4fc6-8079-29697fab72c7" isLeaf="false">
+                <opaqueActionMoniker Id="2701bb33-de4e-4138-b45d-d283a3cb63b9" LastKnownName="Send Cancellation Confirmation" />
+                <elementDefinition Id="b2547c1d-700d-4a64-a99c-dd63a358f0cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="2701bb33-de4e-4138-b45d-d283a3cb63b9" name="Send Cancellation Confirmation" isLeaf="false">
+            <elementDefinition Id="fca5bd5b-f2e8-4b8a-aeb5-56e4ece288d4" />
+            <flowNodeTargets>
+              <controlFlow Id="65b521d3-4f52-4e94-94f6-a3c8fd51370d" isLeaf="false">
+                <opaqueActionMoniker Id="23a7e31e-ed2a-4443-95d3-803d78922500" LastKnownName="Void Ticket" />
+                <elementDefinition Id="266c170d-9d70-470c-9a48-c1807770f6d8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="23a7e31e-ed2a-4443-95d3-803d78922500" name="Void Ticket" isLeaf="false">
+            <elementDefinition Id="cdc36de2-b251-496d-a745-cb4706451dc7" />
+            <flowNodeTargets>
+              <controlFlow Id="f019d30a-5a9f-4e0a-8e9c-3574f2763437" isLeaf="false">
+                <activityFinalNodeMoniker Id="97fa288f-b8e5-4d15-abde-d798b5ebf262" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4f198bf6-cc18-48e6-8cca-e0616e5b7b90" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="97fa288f-b8e5-4d15-abde-d798b5ebf262" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="579fea6c-0211-4b1d-99b5-2921b1fbbde1" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="fe212838-5518-4050-ba78-a732d30ea330" name="08220 ACW">
+    <elementDefinition Id="7e2a30a0-5a05-442c-8e31-00f76bbfbf65" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,28 @@
+j48-1, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = no
+j48-2, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = cva
+j48-3, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = a-f, Contra <= 25
+j48-4, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = a-f, Contra > 25, IPSI <= 72
+j48-5, risk = high, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = a-f, Contra > 25, IPSI > 72
+j48-6, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = asx
+j48-7, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = yes, Indication = tia
+j48-8, risk = low, Arrhythmia = no, Diabetes = no, Contra <= 65, Hypertension = yes, IHD = no
+j48-9, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra <= 85
+j48-10, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra > 85, Indication = cva
+j48-11, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra > 85, Indication = a-f
+j48-12, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra > 85, Indication = asx
+j48-13, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra > 85, Indication = tia, IHD = yes
+j48-14, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = no, Contra > 85, Indication = tia, IHD = no
+j48-15, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI <= 67
+j48-16, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = yes
+j48-17, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = no, Indication = cva
+j48-18, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = no, Indication = a-f, IPSI <= 85
+j48-19, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = no, Indication = a-f, IPSI > 85
+j48-20, risk = high, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = no, Indication = asx
+j48-21, risk = low, Arrhythmia = no, Diabetes = no, Contra > 65, Hypertension = yes, IPSI > 67, IHD = no, Indication = tia
+j48-22, risk = low, Arrhythmia = no, Diabetes = yes, Contra <= 35
+j48-23, risk = high, Arrhythmia = no, Diabetes = yes, Contra > 35
+j48-24, risk = low, Arrhythmia = yes, Contra <= 40, Indication = cva
+j48-25, risk = high, Arrhythmia = yes, Contra <= 40, Indication = a-f
+j48-26, risk = high, Arrhythmia = yes, Contra <= 40, Indication = asx
+j48-27, risk = low, Arrhythmia = yes, Contra <= 40, Indication = tia
+j48-28, risk = high, Arrhythmia = yes, Contra > 40

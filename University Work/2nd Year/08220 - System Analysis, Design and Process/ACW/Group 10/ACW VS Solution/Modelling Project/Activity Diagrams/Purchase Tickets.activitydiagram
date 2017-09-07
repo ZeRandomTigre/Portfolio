@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="036a95c8-b629-4300-badd-28adc55ab4ff" name="PurchaseTickets" linkedPackageId="a8ff25c7-0bef-4479-9ebd-faca2c1a12a0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d41cdd51-58f3-4c82-8773-3019c7d881d1">
+      <elementDefinition Id="aee42971-54c3-4570-869f-53778815f4cf" />
+      <body>Customer Representative</body>
+    </comment>
+    <comment Id="be92bc45-dadf-47ee-9682-baf3f0e1169d">
+      <elementDefinition Id="a1737307-02d7-4bab-b2c2-11985cba906c" />
+      <body>Customer</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7abb0d2c-1e7b-4881-8c62-ca7278c87b41">
+      <profileInstance Id="cd8b0aab-9b1c-4b1c-b461-da934210fe94" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e3fdc3b8-5dfc-4e3b-a6ba-2bdf05695ffa">
+      <profileInstance Id="b68b69a3-74a1-4bec-8e82-7f8ce8568ebc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1b5ff738-0883-4d75-a958-a3f1ca8712a3" name="PurchaseTickets" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="d4daafdd-7906-4530-95a6-04a6a2274bc5" />
+        <nodes>
+          <initialNode Id="6102287b-5453-4141-875d-e1514a33e13e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e02a70e9-6dfb-4ccf-b612-a2aae17440a2" />
+            <flowNodeTargets>
+              <controlFlow Id="cac2c1ae-2f46-4d62-902b-dce9f57b0fc9" isLeaf="false">
+                <opaqueActionMoniker Id="b4cb0521-1441-4c4c-8d64-876b6231152e" LastKnownName="Create Sale" />
+                <elementDefinition Id="32d972b4-f7e6-4ce4-be09-13f17984cb54" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="b4cb0521-1441-4c4c-8d64-876b6231152e" name="Create Sale" isLeaf="false">
+            <elementDefinition Id="ae84e3b5-4012-43aa-b908-db6297e5d2b1" />
+            <flowNodeTargets>
+              <controlFlow Id="30d45810-e616-430f-b1ca-4eceffc78da0" isLeaf="false">
+                <opaqueActionMoniker Id="64229720-2cb9-4b40-9a35-501036725210" LastKnownName="Select Destination" />
+                <elementDefinition Id="d80a04b9-aade-471f-871e-018d2577a035" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="64229720-2cb9-4b40-9a35-501036725210" name="Select Destination" isLeaf="false">
+            <elementDefinition Id="291565e6-7f34-4d87-a803-6cf45858b4ef" />
+            <flowNodeTargets>
+              <controlFlow Id="8c81c1c9-722b-40c4-b160-a1609dc05795" isLeaf="false">
+                <decisionNodeMoniker Id="fe083bc7-3fd3-4d01-9ed3-7ddff825d9cf" LastKnownName="Decision1" />
+                <elementDefinition Id="edbe37bb-720e-448b-974e-e20a5a612c6a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="fe083bc7-3fd3-4d01-9ed3-7ddff825d9cf" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e88e911a-9113-49e1-933b-0effb591fdd0" />
+            <flowNodeTargets>
+              <controlFlow Id="339e5bae-8e31-40be-8fcc-ad7ac492dc59" guard="Tickets Available" isLeaf="false">
+                <decisionNodeMoniker Id="6eb3414c-5e5d-42dd-a3a5-016bc7c6baa1" LastKnownName="Decision2" />
+                <elementDefinition Id="cff19444-e1ec-4442-906e-7547e38dc23f" />
+              </controlFlow>
+              <controlFlow Id="77c77356-2c4c-48be-bb1c-0e739af80bd0" guard="Tickets Sold Out" isLeaf="false">
+                <decisionNodeMoniker Id="8b5e82e5-9de2-429b-aede-d04bb2339339" LastKnownName="Decision4" />
+                <elementDefinition Id="fe09f66e-3025-4258-aeda-1bca62db96be" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="50d5c581-e157-42cc-9d60-29911264e838" name="Apply Discounts" isLeaf="false">
+            <elementDefinition Id="b6471f7c-a942-407e-9f3a-01c92ed6151e" />
+            <flowNodeTargets>
+              <controlFlow Id="0ad3c9d2-70d3-4d5e-9075-baed66eba723" isLeaf="false">
+                <opaqueActionMoniker Id="913fd7c8-0660-4610-89b5-0090c8473a99" LastKnownName="Display Cost" />
+                <elementDefinition Id="c25e4dc8-83b1-4cf0-8656-74cc1589a18a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="913fd7c8-0660-4610-89b5-0090c8473a99" name="Display Cost" isLeaf="false">
+            <elementDefinition Id="a60faec8-4a32-49ab-a41e-6d4b66c68cc1" />
+            <flowNodeTargets>
+              <controlFlow Id="621c2a46-a6ac-4e36-9272-d44348ed2881" isLeaf="false">
+                <decisionNodeMoniker Id="5bb8bb79-df26-4810-aad4-38a4bd3ed1ba" LastKnownName="Decision3" />
+                <elementDefinition Id="e3944a4b-dfc3-4ae9-b1c4-d3095ed136a2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="6eb3414c-5e5d-42dd-a3a5-016bc7c6baa1" name="Decision2" isLeaf="false">
+            <elementDefinition Id="255ff9da-77c8-4040-b9ef-73d87dc5a866" />
+            <flowNodeTargets>
+              <controlFlow Id="9ecd33c9-3b98-4e78-a81f-197bbf82a2da" guard="Discount Available" isLeaf="false">
+                <opaqueActionMoniker Id="50d5c581-e157-42cc-9d60-29911264e838" LastKnownName="Apply Discounts" />
+                <elementDefinition Id="8c1b95ce-3cdc-4d73-96fa-bcf342913278" />
+              </controlFlow>
+              <controlFlow Id="4f462212-be90-4ec3-b78a-59e18d9f0303" guard="No Discount" isLeaf="false">
+                <opaqueActionMoniker Id="913fd7c8-0660-4610-89b5-0090c8473a99" LastKnownName="Display Cost" />
+                <elementDefinition Id="193de3a5-beea-49c4-b1ab-91bf6201f966" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="5bb8bb79-df26-4810-aad4-38a4bd3ed1ba" name="Decision3" isLeaf="false">
+            <elementDefinition Id="46f8c4da-24de-4212-b2ba-be0ae0740443" />
+            <flowNodeTargets>
+              <controlFlow Id="383c2cb8-9fe3-4382-bb4f-f9ac49b0ed5a" guard="Customer wishes to pay in full" isLeaf="false">
+                <opaqueActionMoniker Id="02c3fb2f-efcc-4cd3-a741-05efe418f69c" LastKnownName="Pay in Full" />
+                <elementDefinition Id="f91979aa-2112-4bfa-9ac3-b518c841a588" />
+              </controlFlow>
+              <controlFlow Id="2415234f-9bfb-4ab6-afe9-68641e82ee79" guard="Customer wishes to pay only a desposit" isLeaf="false">
+                <opaqueActionMoniker Id="533e885f-829d-409a-97a1-df39b8e0609a" LastKnownName="Create Payment Plan" />
+                <elementDefinition Id="5f8488c7-d957-449b-8c49-afa4e9d05e29" />
+              </controlFlow>
+              <controlFlow Id="381ead02-5995-4a8f-8397-ff7ada90b696" guard="Customer decides against it." isLeaf="false">
+                <opaqueActionMoniker Id="ff974d28-96f9-4bb7-964f-c4b9eedba6e8" LastKnownName="Cancel Sale" />
+                <elementDefinition Id="9e1d8803-b54e-4291-a335-6da10a7b9b24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="02c3fb2f-efcc-4cd3-a741-05efe418f69c" name="Pay in Full" isLeaf="false">
+            <elementDefinition Id="e67e1ac2-2fb5-4247-ba9a-40be2b80f341" />
+            <flowNodeTargets>
+              <controlFlow Id="638b2702-d8b3-4bea-8f32-13a409e402a4" isLeaf="false">
+                <opaqueActionMoniker Id="4e58afad-00c2-40f6-90e5-be775ff77cf8" LastKnownName="Print Ticket" />
+                <elementDefinition Id="11d0f1b5-931e-45bd-8c1b-06445b116b51" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="533e885f-829d-409a-97a1-df39b8e0609a" name="Create Payment Plan" isLeaf="false">
+            <elementDefinition Id="91c3f960-538b-453d-b7c9-cd3f9d8d20a3" />
+            <flowNodeTargets>
+              <controlFlow Id="45118a2c-7e64-40b1-b17b-8eb50bd18f00" isLeaf="false">
+                <opaqueActionMoniker Id="4e58afad-00c2-40f6-90e5-be775ff77cf8" LastKnownName="Print Ticket" />
+                <elementDefinition Id="86b3749a-dee4-4a22-a5dc-e09771ce3d04" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8b5e82e5-9de2-429b-aede-d04bb2339339" name="Decision4" isLeaf="false">
+            <elementDefinition Id="f1054962-2828-4741-8f9a-8279deacf566" />
+            <flowNodeTargets>
+              <controlFlow Id="a0db2c31-7c4a-4d56-9e3d-6bdd387945fb" guard="Customer wishes to continue" isLeaf="false">
+                <opaqueActionMoniker Id="64229720-2cb9-4b40-9a35-501036725210" LastKnownName="Select Destination" />
+                <elementDefinition Id="501b42f8-2a83-4772-8abb-c20a6aaf40c9" />
+              </controlFlow>
+              <controlFlow Id="d691201c-1590-4dac-a768-8af192e971a1" guard="Customer Leaves" isLeaf="false">
+                <opaqueActionMoniker Id="ff974d28-96f9-4bb7-964f-c4b9eedba6e8" LastKnownName="Cancel Sale" />
+                <elementDefinition Id="483cf206-1cbd-47a7-b26f-90feff353946" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ff974d28-96f9-4bb7-964f-c4b9eedba6e8" name="Cancel Sale" isLeaf="false">
+            <elementDefinition Id="3e89902c-54f4-4314-bd6d-541608b1228a" />
+            <flowNodeTargets>
+              <controlFlow Id="061d2523-3980-4fd6-8985-5a0c91ed0238" isLeaf="false">
+                <mergeNodeMoniker Id="1b097bb0-7d24-466a-a6bc-c7f1ae6f041c" LastKnownName="Merge1" />
+                <elementDefinition Id="eb3623d7-bb98-4b2f-a179-fd2416ce726c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4e58afad-00c2-40f6-90e5-be775ff77cf8" name="Print Ticket" isLeaf="false">
+            <elementDefinition Id="18bcf8f0-eb9c-45bb-b5de-a7d52eb2ce78" />
+            <flowNodeTargets>
+              <controlFlow Id="cb82ff16-804f-48cd-9128-f6b0b33ca081" isLeaf="false">
+                <mergeNodeMoniker Id="1b097bb0-7d24-466a-a6bc-c7f1ae6f041c" LastKnownName="Merge1" />
+                <elementDefinition Id="512f1774-2193-4b0b-90ca-4b503239d360" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="1b097bb0-7d24-466a-a6bc-c7f1ae6f041c" name="Merge1" isLeaf="false">
+            <elementDefinition Id="fc94dec0-5c4e-40e7-b7c4-44fbed0e9591" />
+            <flowNodeTargets>
+              <controlFlow Id="57082663-8d4c-4ae0-9d06-589bc34d6256" isLeaf="false">
+                <decisionNodeMoniker Id="8fe291d2-f136-4d68-b108-ff768d3384e6" LastKnownName="Decision5" />
+                <elementDefinition Id="c2d9243b-5975-4f52-9dde-16cdcb2c73e1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode Id="2efaa130-02fb-4f46-aff4-6ee0aadc2c83" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="d3bf5b0c-c37e-4afb-b7de-a65b05ab305c" />
+          </activityFinalNode>
+          <decisionNode Id="8fe291d2-f136-4d68-b108-ff768d3384e6" name="Decision5" isLeaf="false">
+            <elementDefinition Id="efe486d9-7f46-48ff-bc86-def1a5e7adac" />
+            <flowNodeTargets>
+              <controlFlow Id="e86463fa-3bd9-4fc3-878c-41910e674a4d" guard="No more sales" isLeaf="false">
+                <activityFinalNodeMoniker Id="2efaa130-02fb-4f46-aff4-6ee0aadc2c83" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9c9365b8-311b-44c9-9858-dd794c517755" />
+              </controlFlow>
+              <controlFlow Id="a249163c-02cd-4637-b122-2dbf3c75e36d" guard="More Sales" isLeaf="false">
+                <opaqueActionMoniker Id="b4cb0521-1441-4c4c-8d64-876b6231152e" LastKnownName="Create Sale" />
+                <elementDefinition Id="5b1853e8-f670-4b49-afed-399d072e082b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a8ff25c7-0bef-4479-9ebd-faca2c1a12a0" name="08220 ACW">
+    <elementDefinition Id="7e2a30a0-5a05-442c-8e31-00f76bbfbf65" />
+  </package>
+</activityRootModel>

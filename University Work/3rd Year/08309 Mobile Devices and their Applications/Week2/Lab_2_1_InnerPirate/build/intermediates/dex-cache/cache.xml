@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_8e8b6e50c3063790d0e88c54a1a3a3116a49f831.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_7f9b640905e8cdfd6354aac9aa93482dbf9f8ccd.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="f9a1e8e3e13345bce7ac6118765fb6f858d85b95">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_03d5f00a2634fd2908446e626f8dd0e1f0d6b8c1.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="601743338e4cc8948b77f8db9433f6074722a4d3">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\instant-run_99e2972c88571b3b13fc0d031c7e9ca44fe05d01.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_a499eefee7ca626974cd77c19a73b7f87a74e4dd.jar" />
+    </item>
+    <item
+        jar="E:\Programs\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\University SVN\[08309] SVN\Week2\Lab_2_1_InnerPirate\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_d9c2a76d31cbbdec1cb9754da46d65fdcb442675.jar" />
+    </item>
+
+</items>

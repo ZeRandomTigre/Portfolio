@@ -1,0 +1,13 @@
+﻿<Window x:Class="Bus_Tours_Program.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wynne's Tours" Height="350" Width="525">
+    <Grid>
+        <Label Content="Customer Representative" HorizontalAlignment="Left" Margin="181,25,0,0" VerticalAlignment="Top" Height="31" Width="146"/>
+        <Button Content="Buy Ticket" HorizontalAlignment="Left" Height="27" Margin="10,152,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button Content="Pay Remainder" HorizontalAlignment="Left" Height="27" Margin="193,152,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cancel Ticket" HorizontalAlignment="Left" Height="27" Margin="346,152,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="27" Margin="193,201,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+{
+colour (3,15)
+position (3,4)
+size (2)
+{
+position (13,4)
+size (2)
+colour (5)
+}
+{
+size (3)
+{
+position (4,5)
+size (12)
+{
+{
+position (30,3)
+size (3)
+colour (5)
+}
+position (30,33)
+size (14)
+colour (5)
+}
+colour (5)
+}
+position (1,5)
+colour (5)
+}
+}

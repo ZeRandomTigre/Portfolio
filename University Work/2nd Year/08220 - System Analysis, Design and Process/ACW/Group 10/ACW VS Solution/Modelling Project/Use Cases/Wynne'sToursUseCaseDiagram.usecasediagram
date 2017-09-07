@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe3e0300-d8de-480a-a5b5-7b1f6cb08ca6" name="Wynne'sToursUseCaseDiagram" linkedPackageId="9b625adf-4e46-4735-9e1a-a25fb5044495" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="08de5ce3-e15e-47b1-992b-17905503f1bc">
+      <elementDefinition Id="d6fd74a7-c129-48c8-84a1-506704c3b93e" />
+      <body>Title: Join Gold Club
+Primary Actor: Customer Representative
+Precondition:  Customer chooses to join the gold club
+Postcondition: Customer has joined the gold club and paid for the first year
+
+Main success scenario:
+	1. Customer pays for annual membership
+	2. Customer representative enter customer details (name, address, 						email e.t.c) into the system
+	3. System upgrades customer to gold membership
+
+Extensions:
+	1a. Customer pays for membership by bank transfer
+		1. Customer representative enters customer bank details into the system
+		2. System withdraws funds 
+	1b. Customer pays for membership by debit/credit card
+		1. Customer representative enters customer card details into system
+		2. System withdraws fund from card
+	1c. Customer pays for membership by cash
+		1. Customer representative enters cash amount into system
+		2. System calculates change
+
+
+
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="347fe4aa-0f4b-4a4c-ad4e-1ef825953f60" LastKnownName="Join Gold Club" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b90533c0-c68e-44eb-a0bc-991f53ace48c">
+      <elementDefinition Id="aea6e00b-fb81-4657-afca-9dc3cee2e786" />
+      <body>Title: Cancel Ticket
+Primary Actor: Customer Representative
+Precondition: Customer wants to cancel ticket or ticket reservation
+Postcondition: Ticket has been cancelled and any money paid by customer has been refunded
+
+Main Success Scenario:
+	1. Find customer page in system (by entering details into system)
+	2. Customer representative deletes ticket or reservation
+	3. System refunds money by way customer paid</body>
+      <annotatedElements>
+        <useCaseMoniker Id="1698da85-0acf-451e-8756-1a3ca611890c" LastKnownName="Cancel Ticket" />
+      </annotatedElements>
+    </comment>
+    <comment Id="234e74dd-9588-4ee0-8a47-25efc1b44d1d">
+      <elementDefinition Id="d3c6d502-8b56-4eb2-a531-66c5c90411d0" />
+      <body>Title: Generate Reports
+Primary Actor: Company Manager
+Preconditions: None
+Postconditions: Manager has made executive decisions on future tours
+
+Main Success Scenario:
+
+	1. Manager asks system to generate Reports
+	2. System gets data on current tours (Amount of tickets sold, Destination) &amp; 				a simple financial report
+
+Extentions:
+	2a. Apply discount to trip
+	2b. Select size coach &amp; number of coaches
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" LastKnownName="Generate Reports" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b56272df-b2e8-4c8e-ab68-421d17d870e4">
+      <elementDefinition Id="8a583172-3d54-4a0d-adca-38207e7c0d7e" />
+      <body>Title: Buy Ticket
+Primary Actor: Customer Representative
+Preconditions: Customer chooses to buy a ticker for a tour(s)
+Postconditions: Customer has bought or reserved a ticket for a tour(s)
+
+Main Success Scenario:
+
+	1. Customer chooses tour to buy ticket from
+	2. Customer representative checks ticket availability for selected tour
+	3. Customer representative checks if customer has a discount
+	4. Customer selects tour
+
+Extentions:
+
+	2a. Tour is full - customer representative asks customer to pick another tour or cancels ticket buying
+	3a. Customer has discount and customer representative applies discounted price
+	4a (i). Customer pays for ticket by bank transfer
+		1. Customer representative enters customer bank details into the system
+		2. System withdraws funds 
+	4a (ii). Customer pays for ticket by debit/credit card
+		1. Customer representative enters customer card details into system
+		2. System withdraws fund from card
+	4a (iii). Customer pays for ticket by cash
+		1. Customer representative enters cash amount into system
+		2. System calculates change
+	4b. Customer reserves ticket and pays deposit ( see 4a for customer paying extentions)
+
+
+
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="81b201cd-02b4-48b4-800d-cf207b4cf5d0" LastKnownName="Buy Ticket" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="78194cda-1d5f-4903-84be-e99546986e58" name="Company Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a0a4489-7df4-4931-8d2a-88b1010c32ad" />
+        <targetEnds>
+          <association Id="15044cd5-28ae-4561-bc21-a174d64b0091" isDerived="false" sourceEndRoleName="Company Manager" targetEndRoleName="Edit Tour Information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="772e7729-f8d8-43a0-b5a3-206b97b82e8d" LastKnownName="Edit Tour Information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ccb426cd-e60c-4bca-9579-dd9c1e0c2f2f" name="Company Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02099960-445c-4e39-87f7-f0e7a5aa8403" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c301fbf-997e-4e56-bb33-31f29b44ce2f" name="Edit Tour Information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa5559eb-c0f1-4e1d-b546-5923eb5ea485" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b89892c2-6306-4302-ba01-245003ee2118" />
+          </association>
+          <association Id="007b47f2-38d4-4cbe-a2ed-99a25f8d552c" isDerived="false" sourceEndRoleName="Company Manager" targetEndRoleName="Add New Tour" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="556ac731-9a1d-4dc1-bbb3-7a64f13d5bae" LastKnownName="Add New Tour" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f7a9f2c-67b2-42f2-b5e0-2cf6b17284d2" name="Company Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a6bafe2d-bee9-4390-820f-7c03fe0d45eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22b8c1c2-a150-44c9-98e1-3aeb9327a62b" name="Add New Tour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="122e9ed2-5126-4f53-9568-569f664bb63a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9faddf10-e226-4504-aa34-d02fe44d8a6b" />
+          </association>
+          <association Id="34eb0c94-3412-4bd9-b0fd-d99a6d2f93df" isDerived="false" sourceEndRoleName="Company Manager" targetEndRoleName="Delete Tour" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="36044ba0-4d77-4a66-8777-68acbae1d894" LastKnownName="Delete Tour" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5456747e-c921-4827-840a-75035f54a8fd" name="Company Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec6702f9-7737-4e72-b315-e52decd673d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25cfdc98-fee4-48a2-8200-a999a1700036" name="Delete Tour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6200cec-b111-48ec-b471-afcbddb1be02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57640aa6-ec45-4766-9b64-886a35a1cbdb" />
+          </association>
+          <association Id="a49f3da1-6637-4fe0-aa8d-8ebf5f26636c" isDerived="false" sourceEndRoleName="Company Manager" targetEndRoleName="Generate Reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" LastKnownName="Generate Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe0788f2-95c2-4999-874e-ab57740c02bf" name="Company Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ee45424-49b3-4af7-95a7-550abc365a1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58c35b39-5d6e-4109-9f1a-70debd1cb2b4" name="Generate Reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d9afdac7-855b-40c6-928d-e2f91866a5c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5056008-7a40-4e65-8e6b-4edb99628f9e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="4c717149-4a12-4043-a149-1278917e0c20" name="Wynne's Tours" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="81af2371-bcd3-4361-8a61-169fe7db847c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="772e7729-f8d8-43a0-b5a3-206b97b82e8d" name="Edit Tour Information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2492aea0-2577-4c93-95ce-0423070087c4" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="556ac731-9a1d-4dc1-bbb3-7a64f13d5bae" name="Add New Tour" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf00f674-5a91-4945-a283-b201f7ebc2e4" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="36044ba0-4d77-4a66-8777-68acbae1d894" name="Delete Tour" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2d455c0-f893-4af4-9485-cef47fc4416e" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" name="Generate Reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0be321c-b285-403b-86e0-48ad5af9783c" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4610edd8-53c2-4a78-81af-2831659200a6" name="Order More Coaches for Tour" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d71c5ed1-db30-4322-9d99-25cebfc77589" />
+        <extendedCases>
+          <extend Id="34c53734-7a9c-4057-92a8-59ac9ccf6288">
+            <useCaseMoniker Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" LastKnownName="Generate Reports" />
+            <elementDefinition Id="9d5c654d-a350-4958-954e-38c79a3c2931" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a21e1d20-6f1f-4438-8e43-790ef23a7656" name="Apply Discounts to Trip" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87f6e861-a32c-4dd8-be23-fc1c7d4d20a1" />
+        <extendedCases>
+          <extend Id="7eb43e35-60fa-484d-a680-c8a1d0238ee7">
+            <useCaseMoniker Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" LastKnownName="Generate Reports" />
+            <elementDefinition Id="6defda58-ca54-41cb-bb4f-85ac70b86b36" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="33a94b59-0637-4ca8-99d1-36fd2e9a62e7" name="Select an Appropriate Sized Coach" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f039149-6f1e-49aa-9266-c2f7f26910cb" />
+        <extendedCases>
+          <extend Id="28a1f5b9-3caf-49ef-99d3-b7a82730a902">
+            <useCaseMoniker Id="257dba94-f7ee-4c0b-95c7-1226daed15f1" LastKnownName="Generate Reports" />
+            <elementDefinition Id="1d348814-3f66-45ff-ae26-553faf90a5f8" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="714f75d4-6942-4557-9028-dacaf6b166db" name="Customer Representative" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63ab1633-b815-4664-8386-6b80ee4c99ec" />
+        <targetEnds>
+          <association Id="3fa7e5dd-f5c4-4acf-9679-1c9eced9dfc6" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Gold Member Options" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8e486643-781d-4269-8438-bfc71a91444c" LastKnownName="Gold Member Options" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9dacc32c-d60b-4168-bcd8-cc4fad699083" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b587bbd-a142-4820-98a4-07e5a6d7dd7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="efedbcb5-662f-4501-890d-3a704824d24f" name="Gold Member Options" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="de92a54c-3034-4e81-aa80-3abd2578de83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a7b9192e-67bb-434a-ae98-fd060cee95c0" />
+          </association>
+          <association Id="f137dd65-6a35-41b1-96cd-cf5027b001c0" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Join Gold Club" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347fe4aa-0f4b-4a4c-ad4e-1ef825953f60" LastKnownName="Join Gold Club" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59a68d60-893a-4039-913d-c4cb95762c0f" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22fa34f8-78b8-431d-89eb-2e0ce4ae13bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ab5dedd-3d43-43a1-9ed8-5774116eb186" name="Join Gold Club" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0afe8cd-3287-4745-8c29-2e875c500a31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="381ff015-3d6b-44a0-a289-17d45856b6f6" />
+          </association>
+          <association Id="ba92ae9e-f1a8-4e41-a010-51303c716ef9" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Buy Ticket" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="81b201cd-02b4-48b4-800d-cf207b4cf5d0" LastKnownName="Buy Ticket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66fef9f4-62cd-4ded-b720-63d839967ace" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="430d0359-c82f-4542-9ea0-71804e989f05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1b3d5d6-a990-4c99-9f85-ee242603df0c" name="Buy Ticket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f8aa11ca-f226-448b-8ef9-037b3e8d234b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cda53882-fa68-4a61-a881-3b9166d79a2a" />
+          </association>
+          <association Id="e5af4936-36de-4adc-b336-a920d3f47310" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Cancel Ticket" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1698da85-0acf-451e-8756-1a3ca611890c" LastKnownName="Cancel Ticket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf7be070-fb3a-4381-985a-38a3b14bf3bb" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6f765eb0-0620-4d69-8c97-5bd7be1d61b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b45a2375-cd6a-4c03-b506-c90001e64bc9" name="Cancel Ticket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="823cf6ec-7a94-4ae9-adfe-ea893af90216" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce85488d-8f3d-4ca5-83af-1c49783838e5" />
+          </association>
+          <association Id="71cd72f9-89ff-4a80-8242-dbf7b774ad79" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Pay Remaining Ticket Fee" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="afa5aca0-91d1-40ee-ada7-ae624affae69" LastKnownName="Pay Remaining Ticket Fee" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43d9f439-ab8c-4477-a09e-f3f50353f289" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d1c83e79-3e67-4857-8762-bc8ab86dca40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71285f0e-d129-4757-bf85-343965f8f7d9" name="Pay Remaining Ticket Fee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f2a9dc0a-101b-4294-bbcc-09ed89698d1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6e64654f-b438-4913-8934-b2a7ef211906" />
+          </association>
+          <association Id="4408db31-3c4c-4a33-8915-d1d9e5b7a3e9" isDerived="false" sourceEndRoleName="Customer Representative" targetEndRoleName="Track" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0da1f2dd-ec36-4f41-b34a-71ea28532686" LastKnownName="Track" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="757c80c8-0eb7-46a0-98be-9911c081451b" name="Customer Representative" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2530d1bb-5a7e-4b81-96a8-ed89412809ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43e87588-b751-4195-bc3d-a97433896f73" name="Track" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e282a6b6-4fb4-4eee-832e-802a9bd7f716" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11df9e47-3b59-4fe0-8c4a-e5899d1aea97" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8e486643-781d-4269-8438-bfc71a91444c" name="Gold Member Options" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0221fcb-80bd-4402-8365-5efe1373c985" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c075ffae-ac27-460d-95bd-b4abda46c2e8" name="Send Newsletter to Members" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50578d7b-fc63-4095-88d8-9122504d5547" />
+        <extendedCases>
+          <extend Id="efb046c5-8661-4ab3-8fa0-9688daecb516">
+            <useCaseMoniker Id="8e486643-781d-4269-8438-bfc71a91444c" LastKnownName="Gold Member Options" />
+            <elementDefinition Id="47862f2f-3865-401a-9d08-0960648778f2" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1293b5cd-659f-429f-88d2-f5fd0d604b0a" name="Check for Expiring Memberships" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27981fc6-3433-4059-b430-738ee78da328" />
+        <extendedCases>
+          <extend Id="3c44726c-2be1-4b36-93dd-e0de3923a13b">
+            <useCaseMoniker Id="8e486643-781d-4269-8438-bfc71a91444c" LastKnownName="Gold Member Options" />
+            <elementDefinition Id="f4d1e640-ced4-4384-b320-8bc808839e9b" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ea62bb78-22a2-4d45-9b27-0085a4c8bd78" name="Issue Reminder to Pay Annual Fee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="52222426-50dd-4ad3-b93f-8a922342326e" />
+        <extendedCases>
+          <extend Id="9f022ec1-384e-4f15-92d1-3a9f7ba4b9a7">
+            <useCaseMoniker Id="1293b5cd-659f-429f-88d2-f5fd0d604b0a" LastKnownName="Check for Expiring Memberships" />
+            <elementDefinition Id="be63e9f5-fe13-4e99-a79c-0b94be960025" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="347fe4aa-0f4b-4a4c-ad4e-1ef825953f60" name="Join Gold Club" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74e04f12-8379-4217-865e-20160fa85163" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6f705327-76ec-46fc-ae1f-35d2629ac111" name="Pay Membership Fees" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8919d93-3e69-4791-8b0d-e228b670bd15" />
+        <extendedCases>
+          <extend Id="1033de2b-0e26-4e44-992d-0e18179fef8c">
+            <useCaseMoniker Id="347fe4aa-0f4b-4a4c-ad4e-1ef825953f60" LastKnownName="Join Gold Club" />
+            <elementDefinition Id="b98ccd7b-1df6-43e6-ada6-ed5404008891" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="91284aac-10f3-41ad-bd86-442891ddb118">
+            <useCaseMoniker Id="8e486643-781d-4269-8438-bfc71a91444c" LastKnownName="Gold Member Options" />
+            <elementDefinition Id="3aad549a-ce54-4ffd-ad1a-74112fcafb54" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1d567299-9f6a-41e1-b115-488d34bb95de" name="Check Ticket Availability" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9844b77b-f7a2-4cf2-8964-5f84b3167755" />
+        <additions>
+          <include Id="d774bb5e-7bb4-48ec-8a96-f0a2e4c18214">
+            <useCaseMoniker Id="d7885b4e-236c-46cb-8fb8-108eb8321cf8" LastKnownName="Select Tour" />
+            <elementDefinition Id="9822ff35-8eec-4039-9772-9737ed1f08ae" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="81b201cd-02b4-48b4-800d-cf207b4cf5d0" name="Buy Ticket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d8dbd12-6261-4172-87cb-6f9b3865af99" />
+        <additions>
+          <include Id="2f934efa-eb07-4689-8980-3ae612140fb8">
+            <useCaseMoniker Id="1d567299-9f6a-41e1-b115-488d34bb95de" LastKnownName="Check Ticket Availability" />
+            <elementDefinition Id="88ea261c-91c2-4fcf-98bc-9e5410107e54" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d7885b4e-236c-46cb-8fb8-108eb8321cf8" name="Select Tour" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00916a30-e6b3-4d31-99e5-4b2ebb46ba32" />
+        <additions>
+          <include Id="b591eacf-8b56-4842-9c15-0479cbf539ba">
+            <useCaseMoniker Id="4751d25c-c3f5-4a6c-b1a2-5ef3bf1803db" LastKnownName="Apply Discount" />
+            <elementDefinition Id="0913b6c4-4a1a-4616-bed3-3de953896e8d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="88c9019b-afc7-4cc0-872e-606264aece98" name="Cancel Ticket  Buying" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34e6cb28-4850-4926-8eeb-1cd44dfcb797" />
+        <extendedCases>
+          <extend Id="235e55e1-73de-4165-bf13-ada7197e6718">
+            <useCaseMoniker Id="1d567299-9f6a-41e1-b115-488d34bb95de" LastKnownName="Check Ticket Availability" />
+            <elementDefinition Id="7d522ff2-54fd-4017-ab48-d0eee092cdc1" />
+          </extend>
+          <extend Id="ef2883b9-ba5a-4046-9286-b98930d95ca7">
+            <useCaseMoniker Id="d7885b4e-236c-46cb-8fb8-108eb8321cf8" LastKnownName="Select Tour" />
+            <elementDefinition Id="f91b4f50-4112-474b-b1c2-40c4ecc6e4b7" />
+          </extend>
+          <extend Id="b98ac748-857d-4f18-9881-9cf471762e68">
+            <useCaseMoniker Id="4751d25c-c3f5-4a6c-b1a2-5ef3bf1803db" LastKnownName="Apply Discount" />
+            <elementDefinition Id="f35468bb-cef6-48a0-9588-f021a67ca09e" />
+          </extend>
+          <extend Id="dca62a89-c99c-4774-b0df-e8d71f32bace">
+            <useCaseMoniker Id="527febf1-3d7d-4083-b3e8-b5ad1072eeac" LastKnownName="Reserve Ticket" />
+            <elementDefinition Id="80bcffd0-d330-464c-8d88-9cc78762372c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0bd50905-5497-4d9c-89c6-86a83556ae5e" name="Pay for Ticket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1baeb625-bc76-4ac4-bcf1-b0635ba26d19" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="527febf1-3d7d-4083-b3e8-b5ad1072eeac" name="Reserve Ticket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d14e7194-0a8c-4129-a1b9-f7dd93cf73fc" />
+        <extendedCases>
+          <extend Id="841f4d83-abb6-47fe-96e2-c3f485c3e3a2">
+            <useCaseMoniker Id="4751d25c-c3f5-4a6c-b1a2-5ef3bf1803db" LastKnownName="Apply Discount" />
+            <elementDefinition Id="d22fa233-9900-43e8-8e5c-91a0ab521cc1" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4751d25c-c3f5-4a6c-b1a2-5ef3bf1803db" name="Apply Discount" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8ee7f44-a1b4-4d04-94ea-1adf5334cdda" />
+        <additions>
+          <include Id="1f1e506e-79ad-446d-9f48-62d665deb3b0">
+            <useCaseMoniker Id="0bd50905-5497-4d9c-89c6-86a83556ae5e" LastKnownName="Pay for Ticket" />
+            <elementDefinition Id="cdf17426-157a-4ade-812b-e22e41227d9f" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1698da85-0acf-451e-8756-1a3ca611890c" name="Cancel Ticket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="28b85a8c-738a-40ef-a9a7-527dcc881f85" />
+        <additions>
+          <include Id="efc54967-2a5f-41c5-827e-d6cdea8dd64e">
+            <useCaseMoniker Id="84b47f7f-979f-49b9-a56c-8c88aa332470" LastKnownName="Refund Customer" />
+            <elementDefinition Id="05ea0747-dbc2-4565-9d08-b1c5c6387178" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="84b47f7f-979f-49b9-a56c-8c88aa332470" name="Refund Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48691694-e3e3-4987-9d5c-48daece16fe3" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="afa5aca0-91d1-40ee-ada7-ae624affae69" name="Pay Remaining Ticket Fee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29600f07-7419-4b83-a407-1c1b972512c3" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0da1f2dd-ec36-4f41-b34a-71ea28532686" name="Track" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92f15057-0e94-4ff0-ad19-1d631509c45e" />
+        <generalsInternal>
+          <generalization Id="c4a30016-dc85-435a-b10c-034060b7a4e7" isSubstitutable="false">
+            <useCaseMoniker Id="df483ec4-03e4-4f14-8a14-c074a1989cc5" LastKnownName="Customer" />
+            <elementDefinition Id="d6ca66fc-9ad4-43ae-8f69-92f0be8649cc" />
+          </generalization>
+          <generalization Id="004d42bc-05c5-4336-b3fc-165e0362aa72" isSubstitutable="false">
+            <useCaseMoniker Id="c6ecca14-a9d7-41af-bc44-8b9c352c751e" LastKnownName="Tour" />
+            <elementDefinition Id="4ab07248-95b6-47d5-a11e-4e4b26b3c9aa" />
+          </generalization>
+          <generalization Id="616ae1f2-a94a-4b11-ab3e-53450ffa650b" isSubstitutable="false">
+            <useCaseMoniker Id="baa3421b-bdde-426a-b9e1-16da56f68ed3" LastKnownName="Coach" />
+            <elementDefinition Id="78aa00d9-429b-43d6-969d-90de689f9ff1" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="df483ec4-03e4-4f14-8a14-c074a1989cc5" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c41adb5c-9876-4cf7-a9e3-2e75e636ca73" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="baa3421b-bdde-426a-b9e1-16da56f68ed3" name="Coach" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3caf1469-29f1-4641-9c1c-1a4836c7a3e8" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c6ecca14-a9d7-41af-bc44-8b9c352c751e" name="Tour" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55f422b8-3188-44b4-ac47-dc812276c3c8" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="b0213185-d8f3-46d1-9d4d-b9dc81be40b3" name="Coach Driver" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="676f52b9-6c4e-4314-b224-1b81394775ba" />
+        <targetEnds>
+          <association Id="cc3fa32f-9884-4d09-b385-4abe4829afc4" isDerived="false" sourceEndRoleName="Coach Driver" targetEndRoleName="Check Manifesto against Customers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="02646691-d064-4bce-9e20-0df8f7b9a60f" LastKnownName="Check Manifesto against Customers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e54a80da-4b6a-44a1-84a5-5d46f02a0347" name="Coach Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="569b801f-da0e-4e1b-bd10-77a1a568846c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b3cd6b4-35a0-4757-8857-e65496753dde" name="Check Manifesto against Customers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f1433ead-fc1f-448c-b879-3b6ad556a6bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c0fe764-145a-4719-a439-9c0fd29bb1fa" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="02646691-d064-4bce-9e20-0df8f7b9a60f" name="Check Manifesto against Customers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="814537b6-0827-4bea-a827-80bfbc1c6f39" />
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="43ed1fa2-807f-41e6-9b4d-78266da3a4e1" name="Provide Customer with Ticket" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94ff9cdc-e515-41cf-b46a-4da99bf38040" />
+        <extendedCases>
+          <extend Id="925cf7a0-5b3d-4b40-b10d-7d7be639766c">
+            <useCaseMoniker Id="02646691-d064-4bce-9e20-0df8f7b9a60f" LastKnownName="Check Manifesto against Customers" />
+            <elementDefinition Id="25c7c2fe-b2fe-4d9a-8dde-496d994fe8c0" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c498a1cf-06e7-488b-b9df-2e247c01fe42" name="Post Ticket to Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bbbb4757-4fa7-454a-8d4f-ef28acbab528" />
+        <extendedCases>
+          <extend Id="5654fe0e-2896-4e4c-b5ea-944862f42f6e">
+            <useCaseMoniker Id="0bd50905-5497-4d9c-89c6-86a83556ae5e" LastKnownName="Pay for Ticket" />
+            <elementDefinition Id="2aa1feb3-b03e-4489-b31a-3b360e3b8c9c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="72b0c8c7-7c75-4e7c-b0da-731aa421a97e" name="Provide Ticket for Collection" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50b9f744-67f4-48c1-bcf2-4913a8b41ae8" />
+        <extendedCases>
+          <extend Id="7fcd5ab8-dfb2-40b2-a519-bfb20bc4c1aa">
+            <useCaseMoniker Id="0bd50905-5497-4d9c-89c6-86a83556ae5e" LastKnownName="Pay for Ticket" />
+            <elementDefinition Id="44565a89-6822-4335-8e1a-889ec7544c02" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b5c32f63-76d0-44ab-b399-43a123e62466" name="Pay Membership Fees" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5aac1bf-9496-47d7-89d2-a99eed79fa04" />
+        <extendedCases>
+          <extend Id="4bae10cd-578d-4ecc-ab82-1e63f9034e61">
+            <useCaseMoniker Id="8e486643-781d-4269-8438-bfc71a91444c" LastKnownName="Gold Member Options" />
+            <elementDefinition Id="f8cd4b7d-5258-42ce-9c97-f5aef7603571" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="4c717149-4a12-4043-a149-1278917e0c20" LastKnownName="Wynne's Tours" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9b625adf-4e46-4735-9e1a-a25fb5044495" name="Wynne'sTours-UMLCaseDiagram">
+    <elementDefinition Id="559b1466-8345-4d49-a4ad-98559d434a82" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7865402a-e5a9-47d1-82ae-aa2f3dbfde9c">
+        <profileInstance Id="334000f5-621a-496d-9f25-6784ad845737" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="70aff31c-4fdd-4096-b7a0-88d8ab75d088">
+        <profileInstance Id="0e888890-61bc-44fa-8fba-398a3dbb44da" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

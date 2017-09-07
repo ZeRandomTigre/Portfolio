@@ -1,0 +1,62 @@
+arrhythmia = no					
+|   diabetes = no					
+|   |   contra <= 60.0					
+|   |   |   ipsi <= 85.0					
+|   |   |   |   indication = a-f					
+|   |   |   |   |   ihd = no: low (236.0)					
+|   |   |   |   |   ihd != no					
+|   |   |   |   |   |   hypertension = no: low (132.0/3.0)					
+|   |   |   |   |   |   hypertension != no					
+|   |   |   |   |   |   |   contra <= 25.0: low (31.0)					
+|   |   |   |   |   |   |   contra > 25.0					
+|   |   |   |   |   |   |   |   ipsi <= 72.0: low (18.0)					
+|   |   |   |   |   |   |   |   ipsi > 72.0: high (24.0)					
+|   |   |   |   indication != a-f: low (993.0/2.0)					
+|   |   |   ipsi > 85.0					
+|   |   |   |   hypertension = no: low (132.0/4.0)					
+|   |   |   |   hypertension != no					
+|   |   |   |   |   ihd = no: low (6.0)					
+|   |   |   |   |   ihd != no: high (36.0)					
+|   |   contra > 60.0					
+|   |   |   ipsi <= 85.0					
+|   |   |   |   hypertension = no					
+|   |   |   |   |   indication = a-f					
+|   |   |   |   |   |   contra <= 85.0: low (64.0)					
+|   |   |   |   |   |   contra > 85.0: high (51.0)					
+|   |   |   |   |   indication != a-f: low (194.0)					
+|   |   |   |   hypertension != no					
+|   |   |   |   |   ipsi <= 67.0: low (24.0)					
+|   |   |   |   |   ipsi > 67.0					
+|   |   |   |   |   |   ihd = no					
+|   |   |   |   |   |   |   indication = asx: high (15.0)					
+|   |   |   |   |   |   |   indication != asx					
+|   |   |   |   |   |   |   |   contra <= 65.0: high (8.0)					
+|   |   |   |   |   |   |   |   contra > 65.0: low (24.0)					
+|   |   |   |   |   |   ihd != no					
+|   |   |   |   |   |   |   indication = tia					
+|   |   |   |   |   |   |   |   ipsi <= 77.0: high (9.0)					
+|   |   |   |   |   |   |   |   ipsi > 77.0					
+|   |   |   |   |   |   |   |   |   contra <= 90.0: low (5.0)					
+|   |   |   |   |   |   |   |   |   contra > 90.0: high (9.0)					
+|   |   |   |   |   |   |   indication != tia: high (56.0)					
+|   |   |   ipsi > 85.0					
+|   |   |   |   hypertension = no					
+|   |   |   |   |   contra <= 85.0: low (14.0)					
+|   |   |   |   |   contra > 85.0					
+|   |   |   |   |   |   contra <= 90.0					
+|   |   |   |   |   |   |   indication = a-f: high (11.0)					
+|   |   |   |   |   |   |   indication != a-f: low (5.0)					
+|   |   |   |   |   |   contra > 90.0: high (33.0)					
+|   |   |   |   hypertension != no: high (78.0)					
+|   diabetes != no					
+|   |   contra <= 35.0: low (7.0)					
+|   |   contra > 35.0: high (95.0)					
+arrhythmia != no					
+|   contra <= 40.0					
+|   |   indication = a-f: high (14.0)					
+|   |   indication != a-f: low (31.0/7.0)					
+|   contra > 40.0					
+|   |   indication = tia					
+|   |   |   ihd = no: low (7.0/2.0)					
+|   |   |   ihd != no: high (29.0)					
+|   |   indication != tia: high (609.0/3.0)					

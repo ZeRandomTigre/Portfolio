@@ -1,0 +1,10 @@
+﻿  rap_extension.cpp
+..\..\..\@RAP\rap_extension\rap_extension\rap_extension.cpp(495): warning C4018: '<': signed/unsigned mismatch
+     Creating library E:\OneDrive\University\3rd Year\08341 Development Project\Working Folder\@RAP\rap_extension\Release\rap_extension.lib and object E:\OneDrive\University\3rd Year\08341 Development Project\Working Folder\@RAP\rap_extension\Release\rap_extension.exp
+  Generating code
+  8 of 941 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    43 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  rap_extension.vcxproj -> E:\OneDrive\University\3rd Year\08341 Development Project\Working Folder\@RAP\rap_extension\Release\rap_extension.dll
+          1 file(s) copied.

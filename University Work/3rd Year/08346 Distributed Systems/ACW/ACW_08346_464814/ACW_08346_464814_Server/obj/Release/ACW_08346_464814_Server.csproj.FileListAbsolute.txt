@@ -1,0 +1,19 @@
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.exe
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_ServiceLibrary.dll
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_ServiceLibrary.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.csprojResolveAssemblyReference.cache
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.exe
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.exe.config
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.exe.config
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.exe
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.exe
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_ServiceLibrary.dll
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_ServiceLibrary.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.csprojResolveAssemblyReference.cache
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\bin\Release\ACW_08346_464814_Server.exe.config
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.exe
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Server\obj\Release\ACW_08346_464814_Server.pdb

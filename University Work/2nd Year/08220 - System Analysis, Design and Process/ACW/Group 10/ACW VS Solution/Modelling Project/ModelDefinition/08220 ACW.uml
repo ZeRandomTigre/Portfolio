@@ -1,0 +1,3514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7e2a30a0-5a05-442c-8e31-00f76bbfbf65"
+  name="08220 ACW" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="aee42971-54c3-4570-869f-53778815f4cf">
+      <body>Customer Representative</body>
+    </comment>
+    <comment
+      Id="a1737307-02d7-4bab-b2c2-11985cba906c">
+      <body>Customer</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="00b9e975-b89a-428f-8544-55b98c08cab1"
+        name="Customer Representative"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f86ac757-2b01-4a84-9562-8b48887301e8"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Pay remainding fee for ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c9b97fb1-2965-4f21-97f2-e19a5d04d10e"
+              LastKnownName="Pay remainding fee for ticket"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="877c0c6a-bab7-406f-b60b-b3417f56b186"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2c3a5a9-08b9-448a-8406-28dcea078e25"
+                  name="Pay remainding fee for ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="73e2a84d-4fcf-4c07-bd0e-d3cd387048a1"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Cancel ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5b72ab9-3e0f-49a7-8564-5b158e306c24"
+              LastKnownName="Cancel ticket"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac291845-bac0-46ad-8323-7e5bc3d7de52"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb1b9f82-ee39-49f4-ba92-57a14ea77fe5"
+                  name="Cancel ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0fb345ce-3602-4185-b27b-21d66dcf7911"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Check ticket availability"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0340f1ad-5c73-4aed-95eb-f95fb24dd675"
+              LastKnownName="Check ticket availability"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba764fa2-8834-49d7-abe7-50e6b8aa4214"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d22b5f4d-34e5-48cc-8472-baf2970fbbf9"
+                  name="Check ticket availability"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="30287b70-d068-4993-9f7e-fb7faca89f35"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Join Gold member"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="03e9898d-c3e3-4667-aec4-52159b4f864c"
+              LastKnownName="Join Gold member"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a09a549c-bb8c-4ca8-a8d8-03af33ffbafe"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0ce90be-48bd-41aa-9f22-7959b54a7d30"
+                  name="Join Gold member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="337c7737-0c2a-4cb5-b19b-919428b82c6a"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Gold member options"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1afa686d-2c7a-4348-b230-5aa9c0857e04"
+              LastKnownName="Gold member options"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b04e1b89-a80b-495c-af36-0e7f1ace18cc"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b462d88e-0121-45bd-8829-326d438fc594"
+                  name="Gold member options"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bd52b2a9-d9ca-4e9f-b408-80698abf0b28"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Track"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="51c468ad-b4d7-47c3-b70a-cef7048f8cb6"
+              LastKnownName="Track"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cb22276-d6e2-4be2-8bfe-50068b28e61d"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df111499-b753-4f18-8984-147040b7e244"
+                  name="Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="65f97685-7570-499f-9878-21fa8be011db"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c5d09702-1199-4223-86ab-ae6b08484ec2"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Customer Representative"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="00b9e975-b89a-428f-8544-55b98c08cab1"
+              LastKnownName="Customer Representative"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2019d682-9083-40ba-b5a7-8776dece31b4"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ebf264ed-6cec-4adc-bbdb-9a97176c0185"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e2480fbc-6927-4e8c-8683-85ec75bb9320"
+        name="Company Manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0675d9c0-6157-4ced-8c39-0d037581fce4"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Check how many tickets have been sold"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c171e3b0-3ed4-464d-b057-185e4f92cb1c"
+              LastKnownName="Check how many tickets have been sold"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b37bdd7f-2576-4ac4-8376-f893f22af888"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7fdd752-401f-4d1b-bbc1-7cb7f7369718"
+                  name="Check how many tickets have been sold"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d2c506f2-a7be-4f6e-b0c2-7f8c1a6b1edd"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Advertise for a trip of apply discount"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="49a20acf-dca1-46d5-a782-9f33485f3833"
+              LastKnownName="Advertise for a trip of apply discount"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="232d5649-1038-45a1-9552-4f84efd61e39"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eadcdfae-05ee-42cc-b75b-7e1158681654"
+                  name="Advertise for a trip of apply discount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f51e8822-b811-4dec-a238-f1e84d147c70"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Edit tour information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="145da237-1861-4c30-b455-e63ed497d4df"
+              LastKnownName="Edit tour information"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="997887de-c04a-4cf0-9236-846b2250f517"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57ebd759-750a-4620-b218-614b90dcea5e"
+                  name="Edit tour information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="970c88d5-a191-454c-9405-1695c2d711a2"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Add new tour"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2c0b3ca1-3719-49bb-833e-c2a439abf256"
+              LastKnownName="Add new tour"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="376ce6ce-a702-44c7-896b-ada714995b6e"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b34b537-afde-4daa-93db-38bb28d4f217"
+                  name="Add new tour"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2da8b2bb-9e9b-42b9-9bdb-c8e574a85bb6"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Delete tour"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0ef7cef7-d0de-4318-a3fc-2295b812a014"
+              LastKnownName="Delete tour"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7215ddd5-b3a5-4e42-b73d-0a559011be1b"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dacc610c-7b7c-4b80-bc65-2b3593e5eac2"
+                  name="Delete tour"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3eec0133-91e5-4d72-8acb-40e3dbf961b3"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Generate reports"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a54ae4f6-061a-4707-91bc-52693b6da4be"
+              LastKnownName="Generate reports"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f64a5db-aedb-4deb-8589-fdc0e9984ab5"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="553656ba-d28f-4011-94ce-2aad8fc487fc"
+                  name="Generate reports"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0ab78797-580c-45e0-b2bd-9e0939143a97"
+        name="Coach Driver"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2fd899f3-d72d-4d7e-9e63-e6ee01e7c8f1"
+            isDerived="false"
+            sourceEndRoleName="Coach Driver"
+            targetEndRoleName="Check manifesto against customers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="62e834a5-48e2-4364-923d-6abcf4827e87"
+              LastKnownName="Check manifesto against customers"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2c731bc-1a13-4b80-aecb-85a6ae1b354d"
+                  name="Coach Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0924286b-e480-439a-98a1-8e1d7aaf83b5"
+                  name="Check manifesto against customers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+        name="Bussmans Busses"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4020b05b-b6b6-4aa9-ad84-c4aaa3e1d3e9"
+            isDerived="false"
+            sourceEndRoleName="Bussmans Busses"
+            targetEndRoleName="Bussmans Busses"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+              LastKnownName="Bussmans Busses"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e69a4afa-a75a-414e-8e28-ba0cdc453a7a"
+                  name="Bussmans Busses"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0420e9b-f370-43e8-a58c-881d7e8d23f8"
+                  name="Bussmans Busses"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ada42ea-88a4-4e0f-aa93-0ab138b916fd"
+        name="Select Destination"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4ee40c9f-4f96-43c6-b241-cbd724df2454">
+            <useCaseMoniker
+              Id="9092bf89-da15-4946-9819-0f95bd750acc"
+              LastKnownName="Apply Discount"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+          <extend
+            Id="ab097bfa-a2c5-4b6d-bd0e-e1f545525d63">
+            <useCaseMoniker
+              Id="d12e2ad9-3bce-418c-adb9-31d92a1864f7"
+              LastKnownName="Cancel ticket buying"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e99eaa5-08d2-4857-a0e8-2ff5d2404465"
+        name="Reserve Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c2ec7624-7070-464c-aeba-1e8b0d3b65b3">
+            <useCaseMoniker
+              Id="d12e2ad9-3bce-418c-adb9-31d92a1864f7"
+              LastKnownName="Cancel ticket buying"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e044ce1-7200-4dcb-9291-56b0ed023a4d"
+        name="Pay in full"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="100bbd50-9608-4a92-9732-268686935c68">
+            <useCaseMoniker
+              Id="d12e2ad9-3bce-418c-adb9-31d92a1864f7"
+              LastKnownName="Cancel ticket buying"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9092bf89-da15-4946-9819-0f95bd750acc"
+        name="Apply Discount"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e84ea5f7-3b34-4262-806d-92f0d45d63e0"
+            isDerived="false"
+            sourceEndRoleName="Apply Discount"
+            targetEndRoleName="Reserve Ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e99eaa5-08d2-4857-a0e8-2ff5d2404465"
+              LastKnownName="Reserve Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b29b4441-9c35-40f8-a3d7-ad4454cd1ef2"
+                  name="Apply Discount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43f2aa3e-8f86-4948-90ff-ca2b1e7704cd"
+                  name="Reserve Ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f189b210-b78d-4592-91d6-3d4f30a0e07f"
+            isDerived="false"
+            sourceEndRoleName="Apply Discount"
+            targetEndRoleName="Pay in full"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e044ce1-7200-4dcb-9291-56b0ed023a4d"
+              LastKnownName="Pay in full"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b164d67d-08ff-477a-a3dc-9e04c3222ee4"
+                  name="Apply Discount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c9ef3e2-dc55-40f3-be6d-2d310fde3417"
+                  name="Pay in full"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="774809bc-b1bd-4712-a5a3-cb143f66d138">
+            <useCaseMoniker
+              Id="d12e2ad9-3bce-418c-adb9-31d92a1864f7"
+              LastKnownName="Cancel ticket buying"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c171e3b0-3ed4-464d-b057-185e4f92cb1c"
+        name="Check how many tickets have been sold"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="90c22bce-2109-4e09-b5d0-7f322cc4a020">
+            <useCaseMoniker
+              Id="313fdf43-b762-4338-8d21-2d5c877f8c04"
+              LastKnownName="Order more coaches for the trip"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+          <extend
+            Id="14d6ff35-f001-4787-b5ff-212819938fd9">
+            <useCaseMoniker
+              Id="aa37b839-3c7e-485e-94e1-36b7f82aefb5"
+              LastKnownName="Select an appropriate sized coach"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="313fdf43-b762-4338-8d21-2d5c877f8c04"
+        name="Order more coaches for the trip"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5fa619c3-b517-4039-b25c-dbca8d64f8aa">
+            <useCaseMoniker
+              Id="a54ae4f6-061a-4707-91bc-52693b6da4be"
+              LastKnownName="Generate reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c9b97fb1-2965-4f21-97f2-e19a5d04d10e"
+        name="Pay remainding fee for ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5b72ab9-3e0f-49a7-8564-5b158e306c24"
+        name="Cancel ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7601cd54-19b6-4766-a6d8-1c36c248eb04">
+            <useCaseMoniker
+              Id="2990bf61-fbad-4631-be71-6ad8eea6ee98"
+              LastKnownName="Find out how much the customer has paid"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0340f1ad-5c73-4aed-95eb-f95fb24dd675"
+        name="Check ticket availability"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="953e4355-a50c-4e11-995c-bf200b242b61"
+            isDerived="false"
+            sourceEndRoleName="Check ticket availability"
+            targetEndRoleName="Sell Ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0ada42ea-88a4-4e0f-aa93-0ab138b916fd"
+              LastKnownName="Select Destination"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01bda96f-b5b7-4a5b-8db5-48591287fdf5"
+                  name="Check ticket availability"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95b06185-178b-43b9-8ffd-696c5623d3a7"
+                  name="Sell Ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="62e834a5-48e2-4364-923d-6abcf4827e87"
+        name="Check manifesto against customers"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="49a20acf-dca1-46d5-a782-9f33485f3833"
+        name="Advertise for a trip of apply discount"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aa37b839-3c7e-485e-94e1-36b7f82aefb5"
+        name="Select an appropriate sized coach"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a7ed4bd2-f133-424e-a074-a2b5bacd1379">
+            <useCaseMoniker
+              Id="a54ae4f6-061a-4707-91bc-52693b6da4be"
+              LastKnownName="Generate reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2990bf61-fbad-4631-be71-6ad8eea6ee98"
+        name="Find out how much the customer has paid"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="625e8f53-dfa2-40a6-8e2c-0977465d1678"
+            isDerived="false"
+            sourceEndRoleName="Find out how much the customer has paid"
+            targetEndRoleName="Refund full"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="db9674a3-37f1-493c-a186-2d6d2f160459"
+              LastKnownName="Refund full"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ad71132-5ffc-43ab-b653-764c2f081c24"
+                  name="Find out how much the customer has paid"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ec78818-5b89-41a9-bc97-9c5424ea9640"
+                  name="Refund full"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8bb32e8d-1b29-400e-8544-fa0f02599e20"
+            isDerived="false"
+            sourceEndRoleName="Find out how much the customer has paid"
+            targetEndRoleName="Refund deposit"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="69ed69d3-13a3-4e0e-b454-f6873cc22549"
+              LastKnownName="Refund deposit"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="855f02da-e8a9-43a0-8d54-f8d4a1f03ed1"
+                  name="Find out how much the customer has paid"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2859b35-8ed9-438c-bbbc-ab72e2c60eb8"
+                  name="Refund deposit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db9674a3-37f1-493c-a186-2d6d2f160459"
+        name="Refund full"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="69ed69d3-13a3-4e0e-b454-f6873cc22549"
+        name="Refund deposit"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="145da237-1861-4c30-b455-e63ed497d4df"
+        name="Edit tour information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ef7cef7-d0de-4318-a3fc-2295b812a014"
+        name="Delete tour"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c0b3ca1-3719-49bb-833e-c2a439abf256"
+        name="Add new tour"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d12e2ad9-3bce-418c-adb9-31d92a1864f7"
+        name="Cancel ticket buying"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a54ae4f6-061a-4707-91bc-52693b6da4be"
+        name="Generate reports"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cdc51357-b365-47ca-aa5d-55df9e396b8e"
+        name="Apply discounts to trip"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="75c20b4e-35bc-4e3b-8d56-1b8eb9e130de">
+            <useCaseMoniker
+              Id="a54ae4f6-061a-4707-91bc-52693b6da4be"
+              LastKnownName="Generate reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51c468ad-b4d7-47c3-b70a-cef7048f8cb6"
+        name="Track"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2465d129-78fb-4283-9602-66efbfbb0c13"
+        name="Coach"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0e0a9001-e5d3-417b-bb96-4030172dd038">
+            <useCaseMoniker
+              Id="51c468ad-b4d7-47c3-b70a-cef7048f8cb6"
+              LastKnownName="Track"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0c9e6aa4-2d38-4f05-a420-6459e1f46194"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0883fced-ffab-4687-a964-43f220957250">
+            <useCaseMoniker
+              Id="51c468ad-b4d7-47c3-b70a-cef7048f8cb6"
+              LastKnownName="Track"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d0f8a719-55bb-42b2-8377-0fd288270ba5"
+        name="Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="af38818d-bba4-41b1-ae0a-8e7b1aca1222">
+            <useCaseMoniker
+              Id="51c468ad-b4d7-47c3-b70a-cef7048f8cb6"
+              LastKnownName="Track"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03e9898d-c3e3-4667-aec4-52159b4f864c"
+        name="Join Gold member"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="387201df-0290-4e43-be39-ece00666ac9d"
+        name="Pay membership fees"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9393ceb4-8147-4182-a060-c12433a84bc9">
+            <useCaseMoniker
+              Id="03e9898d-c3e3-4667-aec4-52159b4f864c"
+              LastKnownName="Join Gold member"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1afa686d-2c7a-4348-b230-5aa9c0857e04"
+        name="Gold member options"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2afbd44c-e976-48ab-bac9-b8411f98389d"
+        name="Send newsletter to members"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f3e54226-19e9-4593-9c0c-a92e18bee90b">
+            <useCaseMoniker
+              Id="1afa686d-2c7a-4348-b230-5aa9c0857e04"
+              LastKnownName="Gold member options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="84325ce1-1e4a-47f9-8132-282b3f0daf57"
+        name="check for expireing memberships"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2558934c-b91b-4e3c-95dd-f5c1ee261fd0"
+            isDerived="false"
+            sourceEndRoleName="check for expireing memberships"
+            targetEndRoleName="Issue reminder"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a4754bc2-e0e1-4c31-8fed-b1165c06b57b"
+              LastKnownName="Issue reminder"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="822827e4-42c3-4b8a-b5a2-880b60016d85"
+                  name="check for expireing memberships"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb2e0552-86ad-406a-8351-b26ed57b3e74"
+                  name="Issue reminder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="ed56469e-1e7a-45e2-9ed4-884699d8b43d">
+            <useCaseMoniker
+              Id="1afa686d-2c7a-4348-b230-5aa9c0857e04"
+              LastKnownName="Gold member options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a4754bc2-e0e1-4c31-8fed-b1165c06b57b"
+        name="Issue reminder"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13a0eafe-e2dd-4aee-8d11-2a7883662f8f"
+            LastKnownName="Bussmans Busses"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="33dc5839-c75e-4975-8130-f4d73b1c94d3"
+        name="ActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="15f99ace-1052-444e-b59f-ab7a009902ba"
+            name="Edit Tour"
+            isLeaf="false" />
+          <opaqueAction
+            Id="d67979e6-25a8-4530-8808-7e1fc58844ea"
+            name="Delete Tour"
+            isLeaf="false" />
+          <opaqueAction
+            Id="e9962545-7e75-481e-bfcf-8f7f5e615f4d"
+            name="Add Tour"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4f622380-f342-48db-aa0a-0333dcde4a17"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15f99ace-1052-444e-b59f-ab7a009902ba"
+                  LastKnownName="Edit Tour"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b68b5cee-1aea-4328-9096-6000e0ebe2b6"
+            name="Decision1"
+            isLeaf="false" />
+          <initialNode
+            Id="0e6bcf1a-65d8-4c14-8687-f189d83e9afb"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="61f67cd4-eb99-4f6d-b49e-814c7e839d37"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e9962545-7e75-481e-bfcf-8f7f5e615f4d"
+                  LastKnownName="Add Tour"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="08ae7e07-915d-4018-9d98-171845f650a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15f99ace-1052-444e-b59f-ab7a009902ba"
+                  LastKnownName="Edit Tour"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4a0484c9-20dd-42a4-af6e-0b58a5c6b3b8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d67979e6-25a8-4530-8808-7e1fc58844ea"
+                  LastKnownName="Delete Tour"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="d4daafdd-7906-4530-95a6-04a6a2274bc5"
+        name="PurchaseTickets"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e02a70e9-6dfb-4ccf-b612-a2aae17440a2"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="32d972b4-f7e6-4ce4-be09-13f17984cb54"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ae84e3b5-4012-43aa-b908-db6297e5d2b1"
+                  LastKnownName="Create Sale"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="ae84e3b5-4012-43aa-b908-db6297e5d2b1"
+            name="Create Sale"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d80a04b9-aade-471f-871e-018d2577a035"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="291565e6-7f34-4d87-a803-6cf45858b4ef"
+                  LastKnownName="Select Destination"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="291565e6-7f34-4d87-a803-6cf45858b4ef"
+            name="Select Destination"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="edbe37bb-720e-448b-974e-e20a5a612c6a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e88e911a-9113-49e1-933b-0effb591fdd0"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="e88e911a-9113-49e1-933b-0effb591fdd0"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cff19444-e1ec-4442-906e-7547e38dc23f"
+                guard="Tickets Available"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="255ff9da-77c8-4040-b9ef-73d87dc5a866"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fe09f66e-3025-4258-aeda-1bca62db96be"
+                guard="Tickets Sold Out"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f1054962-2828-4741-8f9a-8279deacf566"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b6471f7c-a942-407e-9f3a-01c92ed6151e"
+            name="Apply Discounts"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c25e4dc8-83b1-4cf0-8656-74cc1589a18a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a60faec8-4a32-49ab-a41e-6d4b66c68cc1"
+                  LastKnownName="Display Cost"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a60faec8-4a32-49ab-a41e-6d4b66c68cc1"
+            name="Display Cost"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e3944a4b-dfc3-4ae9-b1c4-d3095ed136a2"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="46f8c4da-24de-4212-b2ba-be0ae0740443"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="255ff9da-77c8-4040-b9ef-73d87dc5a866"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c1b95ce-3cdc-4d73-96fa-bcf342913278"
+                guard="Discount Available"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b6471f7c-a942-407e-9f3a-01c92ed6151e"
+                  LastKnownName="Apply Discounts"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="193de3a5-beea-49c4-b1ab-91bf6201f966"
+                guard="No Discount"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a60faec8-4a32-49ab-a41e-6d4b66c68cc1"
+                  LastKnownName="Display Cost"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="46f8c4da-24de-4212-b2ba-be0ae0740443"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f91979aa-2112-4bfa-9ac3-b518c841a588"
+                guard="Customer wishes to pay in full"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e67e1ac2-2fb5-4247-ba9a-40be2b80f341"
+                  LastKnownName="Pay in Full"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5f8488c7-d957-449b-8c49-afa4e9d05e29"
+                guard="Customer wishes to pay only a desposit"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="91c3f960-538b-453d-b7c9-cd3f9d8d20a3"
+                  LastKnownName="Create Payment Plan"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9e1d8803-b54e-4291-a335-6da10a7b9b24"
+                guard="Customer decides against it."
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e89902c-54f4-4314-bd6d-541608b1228a"
+                  LastKnownName="Cancel Sale"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="e67e1ac2-2fb5-4247-ba9a-40be2b80f341"
+            name="Pay in Full"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="11d0f1b5-931e-45bd-8c1b-06445b116b51"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="18bcf8f0-eb9c-45bb-b5de-a7d52eb2ce78"
+                  LastKnownName="Print Ticket"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="91c3f960-538b-453d-b7c9-cd3f9d8d20a3"
+            name="Create Payment Plan"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="86b3749a-dee4-4a22-a5dc-e09771ce3d04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="18bcf8f0-eb9c-45bb-b5de-a7d52eb2ce78"
+                  LastKnownName="Print Ticket"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f1054962-2828-4741-8f9a-8279deacf566"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="501b42f8-2a83-4772-8abb-c20a6aaf40c9"
+                guard="Customer wishes to continue"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="291565e6-7f34-4d87-a803-6cf45858b4ef"
+                  LastKnownName="Select Destination"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="483cf206-1cbd-47a7-b26f-90feff353946"
+                guard="Customer Leaves"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e89902c-54f4-4314-bd6d-541608b1228a"
+                  LastKnownName="Cancel Sale"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="3e89902c-54f4-4314-bd6d-541608b1228a"
+            name="Cancel Sale"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="eb3623d7-bb98-4b2f-a179-fd2416ce726c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="fc94dec0-5c4e-40e7-b7c4-44fbed0e9591"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="18bcf8f0-eb9c-45bb-b5de-a7d52eb2ce78"
+            name="Print Ticket"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="512f1774-2193-4b0b-90ca-4b503239d360"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="fc94dec0-5c4e-40e7-b7c4-44fbed0e9591"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="fc94dec0-5c4e-40e7-b7c4-44fbed0e9591"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c2d9243b-5975-4f52-9dde-16cdcb2c73e1"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="efe486d9-7f46-48ff-bc86-def1a5e7adac"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode
+            Id="d3bf5b0c-c37e-4afb-b7de-a65b05ab305c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="efe486d9-7f46-48ff-bc86-def1a5e7adac"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9c9365b8-311b-44c9-9858-dd794c517755"
+                guard="No more sales"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="d3bf5b0c-c37e-4afb-b7de-a65b05ab305c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5b1853e8-f670-4b49-afed-399d072e082b"
+                guard="More Sales"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ae84e3b5-4012-43aa-b908-db6297e5d2b1"
+                  LastKnownName="Create Sale"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6a0a4489-7df4-4931-8d2a-88b1010c32ad"
+        name="Company Manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b89892c2-6306-4302-ba01-245003ee2118"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Edit Tour Information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2492aea0-2577-4c93-95ce-0423070087c4"
+              LastKnownName="Edit Tour"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02099960-445c-4e39-87f7-f0e7a5aa8403"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa5559eb-c0f1-4e1d-b546-5923eb5ea485"
+                  name="Edit Tour Information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9faddf10-e226-4504-aa34-d02fe44d8a6b"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Add New Tour"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cf00f674-5a91-4945-a283-b201f7ebc2e4"
+              LastKnownName="Add Tour"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6bafe2d-bee9-4390-820f-7c03fe0d45eb"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="122e9ed2-5126-4f53-9568-569f664bb63a"
+                  name="Add New Tour"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="57640aa6-ec45-4766-9b64-886a35a1cbdb"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Delete Tour"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e2d455c0-f893-4af4-9485-cef47fc4416e"
+              LastKnownName="Delete Tour"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec6702f9-7737-4e72-b315-e52decd673d5"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6200cec-b111-48ec-b471-afcbddb1be02"
+                  name="Delete Tour"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69f7bf65-d11f-458b-9677-03df9f5132c4"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Generate List of Tours"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5906af05-8af0-4b64-9c7b-fbe5b33579e5"
+              LastKnownName="Generate List of Tours"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc2ae161-4b14-4505-886c-4c7125247cf7"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f88e143a-30ca-471d-9ba7-da49e11c4b66"
+                  name="Generate List of Tours"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f5056008-7a40-4e65-8e6b-4edb99628f9e"
+            isDerived="false"
+            sourceEndRoleName="Company Manager"
+            targetEndRoleName="Generate Reports"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+              LastKnownName="Generate Reports"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ee45424-49b3-4af7-95a7-550abc365a1b"
+                  name="Company Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9afdac7-855b-40c6-928d-e2f91866a5c1"
+                  name="Generate Reports"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+        name="Wynne's Tours"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="6d33bc12-9be0-4130-b1a6-e30c10ad8c7d">
+            <body>Title: Buy Ticket
+Primary Actor: Customer Representative
+Preconditions: Customer chooses to buy a ticker for a tour(s)
+Postconditions: Customer has bought or reserved a ticket for a tour(s)
+
+Main Success Scenario:
+	1. Customer chooses tour to buy ticket from
+	2. Customer representative checks ticket availability for selected tour
+	3. Customer representative checks if customer has a discount
+	4. Customer selects tour
+
+Extentions:
+	2a. Tour is full - customer representative asks customer to pick another tour or cancels ticket buying
+	3a. Customer has discount and customer representative applies discounted price
+	4a (i). Customer pays for ticket by bank transfer
+		1. Customer representative enters customer bank details into the system
+		2. System withdraws funds 
+	4a (ii). Customer pays for ticket by debit/credit card
+		1. Customer representative enters customer card details into system
+		2. System withdraws fund from card
+	4a (iii). Customer pays for ticket by cash
+		1. Customer representative enters cash amount into system
+		2. System calculates change
+	4b. Customer reserves ticket and pays deposit ( see 4a for customer paying extentions)</body>
+            <annotatedElements>
+              <useCaseMoniker
+                Id="2d8dbd12-6261-4172-87cb-6f9b3865af99"
+                LastKnownName="Buy Ticket"
+                LastKnownLocation="08220 ACW.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="f67b74fe-269e-4cbd-ad56-ca7947419d0b">
+            <body>Title: Join Gold Club
+Primary Actor: Customer Representative
+Precondition:  Customer chooses to join the gold club
+Postcondition: Customer has joined the gold club and paid for the first year
+
+Main success scenario:
+	1. Customer pays for annual membership
+	2. Customer representative enter customer details (name, address, email e.t.c) into the system
+	3. System upgrades customer to gold membership
+
+Extensions:
+	1a. Customer pays for membership by bank transfer
+		1. Customer representative enters customer bank details into the system
+		2. System withdraws funds 
+	1b. Customer pays for membership by debit/credit card
+		1. Customer representative enters customer card details into system
+		2. System withdraws fund from card
+	1c. Customer pays for membership by cash
+		1. Customer representative enters cash amount into system
+		2. System calculates change</body>
+            <annotatedElements>
+              <useCaseMoniker
+                Id="74e04f12-8379-4217-865e-20160fa85163"
+                LastKnownName="Join Gold Club"
+                LastKnownLocation="08220 ACW.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="cb816d37-b6a9-4364-abe5-ca584e4202de">
+            <body>Title: Cancel Ticket
+Primary Actor: Customer Representative
+Precondition: Customer wants to cancel ticket or ticket reservation
+Postcondition: Ticket has been cancelled and any money paid by customer has been refunded
+
+Main Success Scenario:
+	1. Find customer page in system (by entering details into system)
+	2. Customer representative deletes ticket or reservation
+	3. System refunds money by way customer paid</body>
+            <annotatedElements>
+              <useCaseMoniker
+                Id="28b85a8c-738a-40ef-a9a7-527dcc881f85"
+                LastKnownName="Cancel Ticket"
+                LastKnownLocation="08220 ACW.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="0a69c216-c139-4d9a-a53f-9f74ccde5b9e">
+            <body>Title: Generate Reports
+Primary Actor: Company Manager
+Preconditions: None
+Postconditions: Manager has made executive decisions on future tours
+Main Success Scenario:
+	1. Manager asks system to generate Reports
+	2. System gets data on current tours (Amount of tickets sold, Destination) &amp; a simple financial report
+	
+Extentions:
+	2a. Apply discount to trip
+	2b. Select size coach &amp; number of coaches</body>
+            <annotatedElements>
+              <useCaseMoniker
+                Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+                LastKnownName="Generate Reports"
+                LastKnownLocation="08220 ACW.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2492aea0-2577-4c93-95ce-0423070087c4"
+        name="Edit Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf00f674-5a91-4945-a283-b201f7ebc2e4"
+        name="Add Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1d5bde74-77d3-4aaa-98c2-c9169528525e">
+            <useCaseMoniker
+              Id="2492aea0-2577-4c93-95ce-0423070087c4"
+              LastKnownName="Edit Tour"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2d455c0-f893-4af4-9485-cef47fc4416e"
+        name="Delete Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+        name="Generate Reports"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5906af05-8af0-4b64-9c7b-fbe5b33579e5"
+        name="Generate List of Tours"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d71c5ed1-db30-4322-9d99-25cebfc77589"
+        name="Order More Coaches for Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9d5c654d-a350-4958-954e-38c79a3c2931">
+            <useCaseMoniker
+              Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+              LastKnownName="Generate Reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="87f6e861-a32c-4dd8-be23-fc1c7d4d20a1"
+        name="Apply Discounts to Trip"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6defda58-ca54-41cb-bb4f-85ac70b86b36">
+            <useCaseMoniker
+              Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+              LastKnownName="Generate Reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f039149-6f1e-49aa-9266-c2f7f26910cb"
+        name="Select an Appropriate Sized Coach"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1d348814-3f66-45ff-ae26-553faf90a5f8">
+            <useCaseMoniker
+              Id="f0be321c-b285-403b-86e0-48ad5af9783c"
+              LastKnownName="Generate Reports"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7581b4c7-2249-4b6e-8748-4096f8c51710"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="63ab1633-b815-4664-8386-6b80ee4c99ec"
+        name="Customer Representative"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a7b9192e-67bb-434a-ae98-fd060cee95c0"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Gold Member Options"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b587bbd-a142-4820-98a4-07e5a6d7dd7f"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de92a54c-3034-4e81-aa80-3abd2578de83"
+                  name="Gold Member Options"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="381ff015-3d6b-44a0-a289-17d45856b6f6"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Join Gold Club"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="74e04f12-8379-4217-865e-20160fa85163"
+              LastKnownName="Join Gold Club"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22fa34f8-78b8-431d-89eb-2e0ce4ae13bd"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0afe8cd-3287-4745-8c29-2e875c500a31"
+                  name="Join Gold Club"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cda53882-fa68-4a61-a881-3b9166d79a2a"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Buy Ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2d8dbd12-6261-4172-87cb-6f9b3865af99"
+              LastKnownName="Buy Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="430d0359-c82f-4542-9ea0-71804e989f05"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8aa11ca-f226-448b-8ef9-037b3e8d234b"
+                  name="Buy Ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce85488d-8f3d-4ca5-83af-1c49783838e5"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Cancel Ticket"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="28b85a8c-738a-40ef-a9a7-527dcc881f85"
+              LastKnownName="Cancel Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f765eb0-0620-4d69-8c97-5bd7be1d61b9"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="823cf6ec-7a94-4ae9-adfe-ea893af90216"
+                  name="Cancel Ticket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6e64654f-b438-4913-8934-b2a7ef211906"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Pay Remaining Ticket Fee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="29600f07-7419-4b83-a407-1c1b972512c3"
+              LastKnownName="Pay Remaining Ticket Fee"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1c83e79-3e67-4857-8762-bc8ab86dca40"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2a9dc0a-101b-4294-bbcc-09ed89698d1d"
+                  name="Pay Remaining Ticket Fee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="11df9e47-3b59-4fe0-8c4a-e5899d1aea97"
+            isDerived="false"
+            sourceEndRoleName="Customer Representative"
+            targetEndRoleName="Track"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="92f15057-0e94-4ff0-ad19-1d631509c45e"
+              LastKnownName="Track"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2530d1bb-5a7e-4b81-96a8-ed89412809ad"
+                  name="Customer Representative"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e282a6b6-4fb4-4eee-832e-802a9bd7f716"
+                  name="Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="138abab5-5725-4219-b96f-457dbcc48adb"
+        name="Join Gold Club"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5d3cecc8-f517-4891-a585-a17560000123">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+        name="Gold Member Options"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50578d7b-fc63-4095-88d8-9122504d5547"
+        name="Send Newsletter to Members"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="47862f2f-3865-401a-9d08-0960648778f2">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27981fc6-3433-4059-b430-738ee78da328"
+        name="Check for Expiring Memberships"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f4d1e640-ced4-4384-b320-8bc808839e9b">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52222426-50dd-4ad3-b93f-8a922342326e"
+        name="Issue Reminder to Pay Annual Fee"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="be63e9f5-fe13-4e99-a79c-0b94be960025">
+            <useCaseMoniker
+              Id="27981fc6-3433-4059-b430-738ee78da328"
+              LastKnownName="Check for Expiring Memberships"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="74e04f12-8379-4217-865e-20160fa85163"
+        name="Join Gold Club"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e8919d93-3e69-4791-8b0d-e228b670bd15"
+        name="Pay Membership Fees"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b98ccd7b-1df6-43e6-ada6-ed5404008891">
+            <useCaseMoniker
+              Id="74e04f12-8379-4217-865e-20160fa85163"
+              LastKnownName="Join Gold Club"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="3aad549a-ce54-4ffd-ad1a-74112fcafb54">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9844b77b-f7a2-4cf2-8964-5f84b3167755"
+        name="Check Ticket Availability"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9822ff35-8eec-4039-9772-9737ed1f08ae">
+            <useCaseMoniker
+              Id="00916a30-e6b3-4d31-99e5-4b2ebb46ba32"
+              LastKnownName="Select Tour"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d8dbd12-6261-4172-87cb-6f9b3865af99"
+        name="Buy Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="88ea261c-91c2-4fcf-98bc-9e5410107e54">
+            <useCaseMoniker
+              Id="9844b77b-f7a2-4cf2-8964-5f84b3167755"
+              LastKnownName="Check Ticket Availability"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="00916a30-e6b3-4d31-99e5-4b2ebb46ba32"
+        name="Select Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0913b6c4-4a1a-4616-bed3-3de953896e8d">
+            <useCaseMoniker
+              Id="f8ee7f44-a1b4-4d04-94ea-1adf5334cdda"
+              LastKnownName="Apply Discount"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="34e6cb28-4850-4926-8eeb-1cd44dfcb797"
+        name="Cancel Ticket  Buying"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7d522ff2-54fd-4017-ab48-d0eee092cdc1">
+            <useCaseMoniker
+              Id="9844b77b-f7a2-4cf2-8964-5f84b3167755"
+              LastKnownName="Check Ticket Availability"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+          <extend
+            Id="f91b4f50-4112-474b-b1c2-40c4ecc6e4b7">
+            <useCaseMoniker
+              Id="00916a30-e6b3-4d31-99e5-4b2ebb46ba32"
+              LastKnownName="Select Tour"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+          <extend
+            Id="f35468bb-cef6-48a0-9588-f021a67ca09e">
+            <useCaseMoniker
+              Id="f8ee7f44-a1b4-4d04-94ea-1adf5334cdda"
+              LastKnownName="Apply Discount"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+          <extend
+            Id="80bcffd0-d330-464c-8d88-9cc78762372c">
+            <useCaseMoniker
+              Id="d14e7194-0a8c-4129-a1b9-f7dd93cf73fc"
+              LastKnownName="Reserve Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1baeb625-bc76-4ac4-bcf1-b0635ba26d19"
+        name="Pay for Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d14e7194-0a8c-4129-a1b9-f7dd93cf73fc"
+        name="Reserve Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d22fa233-9900-43e8-8e5c-91a0ab521cc1">
+            <useCaseMoniker
+              Id="f8ee7f44-a1b4-4d04-94ea-1adf5334cdda"
+              LastKnownName="Apply Discount"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f8ee7f44-a1b4-4d04-94ea-1adf5334cdda"
+        name="Apply Discount"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cdf17426-157a-4ade-812b-e22e41227d9f">
+            <useCaseMoniker
+              Id="1baeb625-bc76-4ac4-bcf1-b0635ba26d19"
+              LastKnownName="Pay for Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28b85a8c-738a-40ef-a9a7-527dcc881f85"
+        name="Cancel Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="05ea0747-dbc2-4565-9d08-b1c5c6387178">
+            <useCaseMoniker
+              Id="48691694-e3e3-4987-9d5c-48daece16fe3"
+              LastKnownName="Refund Customer"
+              LastKnownLocation="08220 ACW.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="48691694-e3e3-4987-9d5c-48daece16fe3"
+        name="Refund Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29600f07-7419-4b83-a407-1c1b972512c3"
+        name="Pay Remaining Ticket Fee"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="92f15057-0e94-4ff0-ad19-1d631509c45e"
+        name="Track"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d6ca66fc-9ad4-43ae-8f69-92f0be8649cc"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="c41adb5c-9876-4cf7-a9e3-2e75e636ca73"
+              LastKnownName="Customer"
+              LastKnownLocation="08220 ACW.uml" />
+          </generalization>
+          <generalization
+            Id="4ab07248-95b6-47d5-a11e-4e4b26b3c9aa"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="55f422b8-3188-44b4-ac47-dc812276c3c8"
+              LastKnownName="Tour"
+              LastKnownLocation="08220 ACW.uml" />
+          </generalization>
+          <generalization
+            Id="78aa00d9-429b-43d6-969d-90de689f9ff1"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="3caf1469-29f1-4641-9c1c-1a4836c7a3e8"
+              LastKnownName="Coach"
+              LastKnownLocation="08220 ACW.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c41adb5c-9876-4cf7-a9e3-2e75e636ca73"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3caf1469-29f1-4641-9c1c-1a4836c7a3e8"
+        name="Coach"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="55f422b8-3188-44b4-ac47-dc812276c3c8"
+        name="Tour"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="676f52b9-6c4e-4314-b224-1b81394775ba"
+        name="Coach Driver"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1c0fe764-145a-4719-a439-9c0fd29bb1fa"
+            isDerived="false"
+            sourceEndRoleName="Coach Driver"
+            targetEndRoleName="Check Manifesto against Customers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="814537b6-0827-4bea-a827-80bfbc1c6f39"
+              LastKnownName="Check Manifest"
+              LastKnownLocation="08220 ACW.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="569b801f-da0e-4e1b-bd10-77a1a568846c"
+                  name="Coach Driver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1433ead-fc1f-448c-b879-3b6ad556a6bb"
+                  name="Check Manifesto against Customers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="814537b6-0827-4bea-a827-80bfbc1c6f39"
+        name="Check Manifest"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="94ff9cdc-e515-41cf-b46a-4da99bf38040"
+        name="Provide Customer with Ticket"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="25c7c2fe-b2fe-4d9a-8dde-496d994fe8c0">
+            <useCaseMoniker
+              Id="814537b6-0827-4bea-a827-80bfbc1c6f39"
+              LastKnownName="Check Manifest"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bbbb4757-4fa7-454a-8d4f-ef28acbab528"
+        name="Post Ticket to Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2aa1feb3-b03e-4489-b31a-3b360e3b8c9c">
+            <useCaseMoniker
+              Id="1baeb625-bc76-4ac4-bcf1-b0635ba26d19"
+              LastKnownName="Pay for Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50b9f744-67f4-48c1-bcf2-4913a8b41ae8"
+        name="Provide Ticket for Collection"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="44565a89-6822-4335-8e1a-889ec7544c02">
+            <useCaseMoniker
+              Id="1baeb625-bc76-4ac4-bcf1-b0635ba26d19"
+              LastKnownName="Pay for Ticket"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b342a5ea-0f10-444b-ba44-5353e3013055"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5aac1bf-9496-47d7-89d2-a99eed79fa04"
+        name="Pay Membership Fees"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f8cd4b7d-5258-42ce-9c97-f5aef7603571">
+            <useCaseMoniker
+              Id="b0221fcb-80bd-4402-8365-5efe1373c985"
+              LastKnownName="Gold Member Options"
+              LastKnownLocation="08220 ACW.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="81af2371-bcd3-4361-8a61-169fe7db847c"
+            LastKnownName="Wynne's Tours"
+            LastKnownLocation="08220 ACW.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="9ef0f2b3-49fa-417e-b6fe-e09feb993227"
+        name="Cancel Ticket"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="dd02c148-c0cd-4982-9d32-58c3e6f67d53"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="24906e35-f31b-4053-b277-8fe5648bacbf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f32486a6-dd1f-4524-bf69-eaf75a444ea0"
+                  LastKnownName="Enter Customer Details"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="f32486a6-dd1f-4524-bf69-eaf75a444ea0"
+            name="Enter Customer Details"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1c73056-87c9-4b21-bc09-8ac2c811d80a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f0270fbf-8770-4404-bebd-683774dd70d4"
+                  LastKnownName="Delete Customer Reservervation"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f0270fbf-8770-4404-bebd-683774dd70d4"
+            name="Delete Customer Reservervation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ca34ab6f-438d-4e75-8202-58ebe624c02d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="128065b6-ab67-4e27-b0c3-14536b63fbaa"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="128065b6-ab67-4e27-b0c3-14536b63fbaa"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7aceb215-7ded-4546-ad20-84ea946f5c6c"
+                guard="Deposit is not void"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d4f856cc-62a1-401a-9ff8-5b34ba97435a"
+                  LastKnownName="Refund inc. Deposit"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7a292e4d-1634-44e5-a326-de20db0a5137"
+                guard="Deposit void"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8c60ccbf-f0ef-4896-a479-c98ea5855f4e"
+                  LastKnownName="Refund bar Deposit"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="d4f856cc-62a1-401a-9ff8-5b34ba97435a"
+            name="Refund inc. Deposit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2d86d2a4-3372-4582-9dee-53795008cc3d"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="67e74de0-d45e-440c-af62-719de98d3635"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8c60ccbf-f0ef-4896-a479-c98ea5855f4e"
+            name="Refund bar Deposit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5dbf1904-20fc-46b4-a68a-86483e54480e"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="67e74de0-d45e-440c-af62-719de98d3635"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="67e74de0-d45e-440c-af62-719de98d3635"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b2547c1d-700d-4a64-a99c-dd63a358f0cf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fca5bd5b-f2e8-4b8a-aeb5-56e4ece288d4"
+                  LastKnownName="Send Cancellation Confirmation"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="fca5bd5b-f2e8-4b8a-aeb5-56e4ece288d4"
+            name="Send Cancellation Confirmation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="266c170d-9d70-470c-9a48-c1807770f6d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cdc36de2-b251-496d-a745-cb4706451dc7"
+                  LastKnownName="Void Ticket"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cdc36de2-b251-496d-a745-cb4706451dc7"
+            name="Void Ticket"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4f198bf6-cc18-48e6-8cca-e0616e5b7b90"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="579fea6c-0211-4b1d-99b5-2921b1fbbde1"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="579fea6c-0211-4b1d-99b5-2921b1fbbde1"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="64e8813f-42b2-4db1-bad1-853a5ac2f77a"
+        name="Gold Upgrade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="51272258-22b8-4b3d-ae6d-af82e7327cc4"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="da1f203b-4f1e-4a74-ae46-8e30ffcb0790"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="babd3c98-b689-4c18-8905-26db5144ab7d"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="0185a7ad-b582-42b8-84b2-adfe25088fc6"
+            name="Pay Membership"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a97425c3-b5d4-432c-843e-5c38db926a2f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eb2275cc-2ed0-493f-bee9-b65c9afc7027"
+                  LastKnownName="Upgrade User"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9f570b7e-92f9-46cc-853a-a528b0ccadd7"
+            name="Enter Customer Details"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="42345ad2-f8c4-4f86-9e40-d7b4c9929a66"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0185a7ad-b582-42b8-84b2-adfe25088fc6"
+                  LastKnownName="Pay Membership"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="babd3c98-b689-4c18-8905-26db5144ab7d"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0649eb57-b95e-4c1a-a569-00a5256ca774"
+                guard="New Customer"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9f570b7e-92f9-46cc-853a-a528b0ccadd7"
+                  LastKnownName="Enter Customer Details"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8cb45ed6-7096-411e-8846-0596aacf32ef"
+                guard="Existing Customer"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0185a7ad-b582-42b8-84b2-adfe25088fc6"
+                  LastKnownName="Pay Membership"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="eb2275cc-2ed0-493f-bee9-b65c9afc7027"
+            name="Upgrade User"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="503f198b-c4c8-4ecd-853c-47a08eae5ba1"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b19d1499-46ba-45ad-af70-1c0f019c9b80"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="08220 ACW.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="b19d1499-46ba-45ad-af70-1c0f019c9b80"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="763f336d-93db-4035-9f75-bc4a08e57e54"
+        name="Generate Reports"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="614eee43-ea27-41c1-a7dc-beeecf58f5bf"
+            name="Initial1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f7419c41-b669-4412-81e9-49a6141d15f8"
+            name="Generate Report"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="7b0911a5-fb05-45f2-99d9-a1ac25de0716"
+                  name="System fetches data from other parts of system"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="e347b4f5-c895-4bbb-9437-04f009f2b86b"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fc462e2b-664d-4928-ae33-04bb5454df26"
+        LastKnownName="Database Library"
+        LastKnownLocation="Package_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6123efbe-f1cd-4327-993d-fa74f3b6620a"
+        LastKnownName="Bus Tour Program"
+        LastKnownLocation="Package_1234.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

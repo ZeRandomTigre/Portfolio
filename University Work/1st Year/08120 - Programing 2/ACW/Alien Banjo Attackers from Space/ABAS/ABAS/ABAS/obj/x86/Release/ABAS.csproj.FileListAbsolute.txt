@@ -1,0 +1,15 @@
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\accordian.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\DeadlyBanjo.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\note.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\HunterBanjo.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\PlainBanjo.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\explosion.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\Background.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\Font.xnb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\ABAS.exe
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\ABAS.pdb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\obj\x86\Release\ABAS.exe
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\obj\x86\Release\ABAS.pdb
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\obj\x86\Release\ABAS.csprojResolveAssemblyReference.cache
+C:\Users\Sean\SkyDrive\Sean\University\1st Year\Semester 2\CourseWork\08120 - Programing\Alien Banjo Attackers from Space\ABAS\ABAS\ABAS\bin\x86\Release\Content\MainMenuFont.xnb

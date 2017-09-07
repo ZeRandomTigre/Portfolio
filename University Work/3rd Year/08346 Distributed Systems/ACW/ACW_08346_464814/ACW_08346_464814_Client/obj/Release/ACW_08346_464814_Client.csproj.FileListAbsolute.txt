@@ -1,0 +1,15 @@
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.exe.config
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.exe
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.exe
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.csprojResolveAssemblyReference.cache
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.exe.config
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.exe
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.exe
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.csprojResolveAssemblyReference.cache
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\bin\Release\ACW_08346_464814_Client.exe.config
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.exe
+C:\Users\Sean Phillips\Desktop\Sean Phillips Portfolio\3rd Year\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_Client\obj\Release\ACW_08346_464814_Client.pdb

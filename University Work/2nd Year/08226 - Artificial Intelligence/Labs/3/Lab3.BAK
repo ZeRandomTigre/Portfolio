@@ -1,0 +1,13 @@
+% Author:
+% Date: 05/12/2014
+
+/* Weather facts */
+
+temperature(high).
+cloud(low).
+visibility(high).
+
+
+             
+
+

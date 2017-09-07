@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="c61619986f9a42afca7b48a73784b25e26d0e5dc">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\instant-run_0b0c27113ca551aa2f503dc45c4086b982f8d807.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_4446c8ffea24aeed5392b98a572b1b267415ef84.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_28e30ba7980f1ea70a0633e86c23f8f268c19934.jar" />
+    </item>
+    <item
+        jar="E:\Programs\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_d9c2a76d31cbbdec1cb9754da46d65fdcb442675.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_4c1b4b092741b0e4c42818528c5ff3e1bc445935.jar" />
+    </item>
+    <item
+        jar="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="6d9e1379385163e4441cd1875f22d3a171f58cf7">
+        <dex dex="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_db6c6323a7576ec375d4075ca5105cde2ac5f345.jar" />
+    </item>
+
+</items>

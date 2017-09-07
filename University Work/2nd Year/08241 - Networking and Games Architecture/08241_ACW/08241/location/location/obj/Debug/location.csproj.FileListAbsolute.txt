@@ -1,0 +1,9 @@
+Z:\464814\08241\ACW\Location\Location\bin\Debug\Location.exe.config
+Z:\464814\08241\ACW\Location\Location\bin\Debug\Location.exe
+Z:\464814\08241\ACW\Location\Location\bin\Debug\Location.pdb
+Z:\464814\08241\ACW\Location\Location\obj\Debug\Location.exe
+Z:\464814\08241\ACW\Location\Location\obj\Debug\Location.pdb
+Z:\464814\08241\ACW\location\Location\obj\Debug\Location.csprojResolveAssemblyReference.cache
+C:\Users\Sean Phillips\OneDrive\Sean\OneDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\location\Location\bin\Debug\Location.exe.config
+C:\Users\Sean Phillips\OneDrive\Sean\OneDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\location\Location\obj\Debug\Location.exe
+C:\Users\Sean Phillips\OneDrive\Sean\OneDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\location\Location\obj\Debug\Location.pdb

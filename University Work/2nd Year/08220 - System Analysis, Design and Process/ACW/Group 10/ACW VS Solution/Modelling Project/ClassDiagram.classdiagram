@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a9479fa6-149e-4e09-990c-0972edd51f8f" name="ClassDiagram" linkedPackageId="432839c8-2d6b-4452-b02b-ee84ef6fe10d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a5970a07-b6b8-48e2-b044-6775a640b372">
+      <profileInstance Id="2779aa97-2eab-4acf-a1ed-1a492e753423" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="47972784-7a25-45fc-8429-d8951cc84bb7">
+      <profileInstance Id="34beea48-9707-4b62-b18a-cae3a9d7d255" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="56b85a3a-bfa5-42ee-b3c2-77096065ffdb" name="Database Library">
+        <elementDefinition Id="fc462e2b-664d-4928-ae33-04bb5454df26" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="431be250-35ca-49c5-80ca-5a93f8d6875f" name="Coach" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1af63ef4-4ea4-4ab0-9472-2d2ab9c39d36" />
+              <ownedAttributesInternal>
+                <property Id="0e3f85bd-c06a-4aff-8d78-c67d05f1a6e3" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="54a1447a-3881-44ab-aa23-4e8a1a75d95a" />
+                </property>
+                <property Id="54e63d6d-90e2-4bfe-a62a-9b6d9ebfc90f" name="Registration Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52f8baf0-f525-4f85-84ff-daa4bcdf7bcd" />
+                </property>
+                <property Id="68a5b501-8352-40d4-ace3-f97c124257fc" name="Number of Seats" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="893c96dd-6ed0-4b82-9d41-7a51a20362a1" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="30584220-097c-465c-bc1c-46edf8651a6b" name="AddCoach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fbe2b836-7778-406d-bc90-f7ee40946c0c" />
+                </operation>
+                <operation Id="95412497-6633-4cc1-9e9b-3777541f3d5f" name="DeleteCoach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f86567ab-a7bf-47de-a1e9-612693d4cdf8" />
+                </operation>
+                <operation Id="b2922590-bf65-4065-ab6f-1781f63c1d62" name="GetCoaches" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="974d9bf2-f8fe-4a6a-a196-2dc883718c64" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0e425b67-3b61-46c6-90ce-da41272a2ff8" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5e669bb2-67cd-43a5-ac04-ae19d4163ca4" />
+              <targetEnds>
+                <association Id="c70abc60-fc3d-484e-a73e-cb4730fa665f" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Ticket" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ea725b60-ccb0-4f95-869e-357fa0252cb4" LastKnownName="Ticket" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="81efe1d7-e932-46ef-8bb6-ebc2d26911e8" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d3896ed5-8469-4f8c-b888-728ed06c1d6f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="428cd3af-1694-41f5-99fe-13e4a19ca47d" name="Ticket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="86ae42a5-c1a8-4028-ba7b-4406797fadcb" name="Lower" value="0">
+                            <elementDefinition Id="84da688d-8fc7-4d5a-860e-76cf473007e7" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="b0e1fdd3-4e96-4b2d-bf87-66c2a732c010" name="Upper" value=".*">
+                            <elementDefinition Id="6930d30b-ee77-49a7-be2a-c08bf3f8e536" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="e4ef9e45-a53e-4a7b-9761-7e6c346c49e6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="814c675b-cb23-4811-b1c3-3799ebb64e98" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="3a68914a-5fe3-4d61-a695-be71892f89ca" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d2c36b2-a107-40ae-bf7b-367ccf88b374" />
+                </property>
+                <property Id="b221032c-56dc-418d-99c7-ff30b294b22b" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="02d092f5-568f-4d87-b435-ba762f32a745" />
+                </property>
+                <property Id="cbae71a3-3ee5-4ff8-b57a-ad1f9204b6af" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a8ff0c4f-1bd6-414d-9427-a1fe37ce15bc" />
+                </property>
+                <property Id="1257eb57-a621-4982-8934-77157521b452" name="GoldClubMemberExpiryDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8eedd776-29a3-4238-88c6-c8b663b961ea" />
+                </property>
+                <property Id="d99da592-a865-4d9e-a209-8b5d3a48ec06" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05e94949-54c8-47a1-958c-03bc8fc8aa57" />
+                </property>
+                <property Id="1ad9c496-723c-42fa-87d5-f8e4eb3c1e58" name="IsGoldClubMember" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fcfa0561-d1ab-4fef-8773-ea6d26889dcd" />
+                </property>
+                <property Id="584bb6ec-71b9-426b-8d0b-5d5ac8ccae2d" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="686db845-784b-4320-b394-e801ed745362" />
+                </property>
+                <property Id="d82a5d99-12e9-4e09-b170-c5fb03f2f005" name="TelephoneNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7c04e031-b4c7-4a33-ae0c-fc0ec16e78b2" />
+                </property>
+                <property Id="79889706-39e3-48da-a485-7847e3af3186" name="Surname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="faf4c753-6ae1-4061-8407-45ad47623ae3" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1e654834-7050-4fd1-ba50-e479822453de" name="AddCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="61a75907-7fdb-4d47-926c-f6c7a8b9ba9f" />
+                </operation>
+                <operation Id="0c238802-8aaa-4e4d-bf84-9b2d62ecf954" name="CancelGoldClub" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="00f28846-13f4-4e7e-8a2c-0cd2381f1d04" />
+                </operation>
+                <operation Id="7153688f-4d2b-4408-887a-16224cd3d318" name="DeleteCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2b1846b3-0f0d-4030-81a8-33173f03df90" />
+                </operation>
+                <operation Id="6361a11d-cccd-49f1-93e2-3309527a9e60" name="GetCustomerByID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="54064f5e-6b6c-4198-a576-44ee9bbe5c80" />
+                </operation>
+                <operation Id="624c41c1-c490-4d99-a73b-0a3a35735183" name="JoinGoldClub" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="97bbae03-37cc-42b7-acf7-65ed2964b196" />
+                </operation>
+                <operation Id="38c0c0a5-95bd-46d6-bd25-89999ba925ab" name="ModifyCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="90655c21-28c2-45e6-8771-fe23672032ce" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ea725b60-ccb0-4f95-869e-357fa0252cb4" name="Ticket" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9f087a60-74e8-4f55-8cb2-7bcf2b432c17" />
+              <ownedAttributesInternal>
+                <property Id="b5b05a37-47a4-470a-b9a6-172648d4462d" name="BasePrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="66ba71c3-3f5b-476d-b19c-74a4da5b015c" />
+                </property>
+                <property Id="04a56c89-c1f1-4253-9701-64be6702af56" name="CustomerID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9bb88aa6-6df6-483d-8b4c-c15918e3656b" />
+                </property>
+                <property Id="d98ecc13-6e0c-47d3-b29e-32b89a1fbf49" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="945950a0-2f05-4ed4-b55d-83814c8e6af9" />
+                </property>
+                <property Id="8106a5ec-4aa6-4280-a25d-ef7d72f36f1e" name="IsReserved" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8af18147-d775-47da-868b-720c545a21ea" />
+                </property>
+                <property Id="c61ea19e-8f9f-4b82-9817-d7c81d108fd0" name="IsSold" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="15fa0f92-a941-4891-9d76-2811f770f55d" />
+                </property>
+                <property Id="6bace9e6-65ff-469a-b4d6-3e25d7168047" name="ReservationExpiryDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="452740e2-31f8-419a-b663-f64c42362312" />
+                </property>
+                <property Id="934bb419-43ff-4eca-8d8a-2e1d4eef9784" name="SalePrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1275b37c-c2a8-4287-91e4-43214beead75" />
+                </property>
+                <property Id="c228ba06-96d6-49d1-8399-5d2cdc6308be" name="TourID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd8c3746-86b2-4672-97d9-e91a136aa770" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="969894fc-d9b9-4b1c-b378-bf4e66c27fbc" name="BuyTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bf275678-40a0-4d0e-abca-7b230b186ff2" />
+                </operation>
+                <operation Id="0d8002e9-6c0a-43f0-bcb8-8b0c31c0417f" name="CancelTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fab19e5b-82d8-428c-b5ba-e0d0e8883610" />
+                </operation>
+                <operation Id="359cb022-2c3e-4a06-b295-148c3a156d85" name="CancelTicketReservation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e83b0abe-669c-4d64-85c8-69f16a43e084" />
+                </operation>
+                <operation Id="e7cf198f-05a6-4dcc-9ed4-830f9786df22" name="DeleteTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d48a974e-06be-4fd7-ac1c-85edde559676" />
+                </operation>
+                <operation Id="03c0dee6-1117-4aa2-ad16-64e336b02c91" name="GetTicketsForTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="97479b02-7f5d-41e4-97fc-f9f86acfc035" />
+                </operation>
+                <operation Id="442a38e1-121f-4396-9915-1852dd13a182" name="PayForReservedTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d6e120d6-f8e9-4cb3-82d2-1f65b87cc1ad" />
+                </operation>
+                <operation Id="ec0a40d1-f50e-4840-a3b5-ab7e5d7bdf80" name="ReserveTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="937642ee-dc10-4c8c-ac95-12b848a915b0" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5db83610-5a54-4896-9b9b-ea5410898163" name="Tour" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f5c0a02e-272a-40aa-a9f6-51a43e993dc1" />
+              <targetEnds>
+                <association Id="5d89704e-6344-4dbe-ab96-d23083d7baed" isDerived="false" sourceEndRoleName="Tour" targetEndRoleName="Coach" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="431be250-35ca-49c5-80ca-5a93f8d6875f" LastKnownName="Coach" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="55eb96d3-b6fc-442a-b81b-261924015def" name="Tour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="95a2950c-e7b4-4046-98e7-2339fc3ab355" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="5fa61db8-5609-4187-a61a-7b55857caa90" name="Coach" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="8511106b-03fd-4eb5-bbe5-7c6b40ae4e39" name="Lower" value="1">
+                            <elementDefinition Id="463d7c7c-ba18-4272-9edd-d0f489ae650e" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="e8f41797-b99f-4899-8a83-1dc91c99ce00" name="Upper" value="1">
+                            <elementDefinition Id="5dc4645e-b1fd-4f6f-8d56-2cd48daff77f" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="46a74ab9-5714-4ebd-af1d-72b8268e1dc3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c5b81450-8bcf-44ec-8bdd-4eb4e6964392" />
+                </association>
+                <association Id="90c9c16d-f415-451b-8f54-2b34696c147d" isDerived="false" sourceEndRoleName="Tour" targetEndRoleName="Ticket" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ea725b60-ccb0-4f95-869e-357fa0252cb4" LastKnownName="Ticket" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="718d0d1a-26bb-47ee-8337-d44d16c1db97" name="Tour" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="f099deb6-cf55-4e54-afb0-ce668c48dfb2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="959fd62d-f963-4c6a-b5c3-680ed605a2c4" name="Ticket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="472a0181-1acb-4373-a981-71123cb53d17" name="Lower" value="1">
+                            <elementDefinition Id="e738c051-71d1-45d4-8c50-80c1e5901026" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="00682084-23e6-4901-a31f-5a43dcd7036a" name="Upper" value="..*">
+                            <elementDefinition Id="ba5ba98b-6f14-4f09-a9c9-4f6bec6f0f56" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="2529ebdd-1d64-4b60-90ad-c4bebe971acf" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3a56e9ea-d391-4737-9c68-f0923fec2860" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="4b6e851d-f9ec-4b8a-beae-a7d0e6d73b96" name="BaseTicketPrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="110dde65-7127-41c7-bd05-67dc2ba5dc33" />
+                </property>
+                <property Id="22641b76-3271-4159-b806-6f41b4e0b821" name="CoachID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e05d953b-d63b-42c7-90d7-302a5973c2c4" />
+                </property>
+                <property Id="e3608db4-05d3-4cf8-823f-2cfb355e909a" name="DepartureDateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6c1569bf-88e5-44a4-abcf-2d3262c0b58d" />
+                </property>
+                <property Id="10cf62d3-9611-4d8d-be59-da1b3881fbb3" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d1f1cb7f-134c-41a8-8fd5-7659de9c6844" />
+                </property>
+                <property Id="5b69f0cc-2825-4117-8ccd-b4040b520884" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2d84b796-bc13-475a-aab0-80c4ac61efc6" />
+                </property>
+                <property Id="89d884f2-78c6-4614-adb8-012aa615097b" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5bcc2a2e-3c76-4bfa-9a3d-d3c950068ec5" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="b424d516-befa-49f6-971f-3bda9bd6c16a" name="CreateTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6b687969-d908-40bc-8f99-37cc847feeb2" />
+                </operation>
+                <operation Id="2102062b-6348-4df4-bb24-c5476dfea2e1" name="DeleteTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="834a0791-c584-4723-a162-4f5f6c9cbdc5" />
+                </operation>
+                <operation Id="3fe316ec-abf5-459d-aee5-2edbeb10e9af" name="GetAvailableTicketCount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="28945d6d-31ca-46fa-8f28-43709aad49f9" />
+                </operation>
+                <operation Id="15238eec-b722-4e29-97a1-d765ffa98dbe" name="GetTourDetails" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5714a912-54eb-450d-bc03-3d60267918af" />
+                </operation>
+                <operation Id="9ce1e039-bf4b-4533-929b-d002ce814d7b" name="GetTours" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="af73a3ea-782b-486f-927a-2a9d8067ac33" />
+                </operation>
+                <operation Id="0fe6afac-a4c7-4a2d-8583-7b984dfbba66" name="UpdateTicketPriceForTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9cbffd01-ab0f-4527-b51e-60b7373b359a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f85b9e96-f473-4084-aad9-7ccce7d1e6f2" name="Bus Tour Program">
+        <elementDefinition Id="6123efbe-f1cd-4327-993d-fa74f3b6620a" />
+        <suppliersInternal>
+          <dependency Id="74f876b6-7db0-43e1-a0b6-f5766026100b">
+            <packageMoniker Id="56b85a3a-bfa5-42ee-b3c2-77096065ffdb" LastKnownName="Database Library" />
+            <elementDefinition Id="92ecaad5-0613-4708-b617-c2b175af38d8" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="0748e74b-ba2d-4ac2-94de-956f287b1382" name="TicketTour" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="75554cee-b0dc-482e-92e1-70a3e0672656" />
+              <ownedAttributesInternal>
+                <property Id="96d29e78-d261-4f04-ad6c-b66aab84af86" name="TourId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0170612a-ac93-4460-834f-3c69602e396f" />
+                </property>
+                <property Id="a3782605-52a9-46a8-918c-df8eb125c21c" name="TicketId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f880a39-a797-439e-bdb8-928a25e10b8e" />
+                </property>
+                <property Id="9dca41eb-03f5-4efe-a1c0-55077d5f2a9a" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7de8ada9-7955-486f-9fa0-34f74853a04c" />
+                </property>
+                <property Id="1896ca2f-0ffe-4bc7-8c5b-d8de1e621aa9" name="DepartureDateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70e78a08-ca0a-48ee-8756-56df52a35a50" />
+                </property>
+                <property Id="84015f8a-d25b-42da-840f-cb3c034c5021" name="SalePrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6b41f13-f8fb-45d3-b032-d0c31d8642c4" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2e7cff4f-79f3-46a1-b071-ad3d7943d423" name="VMCustomerList" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5df6f2f8-b597-417f-8a86-b653093007e4" />
+              <suppliersInternal>
+                <dependency Id="6e6cd3a6-f028-4945-8499-409e5a4b4dc8">
+                  <classMoniker Id="0748e74b-ba2d-4ac2-94de-956f287b1382" LastKnownName="TicketTour" />
+                  <elementDefinition Id="f68addb7-cc7c-43ce-92dd-687ea47b0133" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="44b24908-a25e-4d09-9e4e-ae2d15cdd1b1" name="SearchString" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12332ced-8885-4bff-96df-7bc2097263b8" />
+                </property>
+                <property Id="c9ebda29-dafa-44b7-81a8-05555f15bf37" name="CustomerList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="383edc96-63b5-4861-b8dc-13041c8cc94d" />
+                </property>
+                <property Id="25580f21-e06d-427e-8a95-6a503404f05b" name="SelectedCustomerTickets" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ed60328e-20ac-4123-b845-a843ab041d4e" />
+                </property>
+                <property Id="92f9ddd1-b4f1-44c6-abb0-d3a4ce68b44b" name="SelectedCustomer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27586f93-16d4-49a2-a9ef-8a71c6dec73a" />
+                </property>
+                <property Id="a4a7d215-7eff-46ee-b6e0-184bfef243b3" name="SelectedTourToBook" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17fabef2-58a7-4220-80ba-879c5729015a" />
+                </property>
+                <property Id="fc000829-2339-41a7-be5d-9701393ad443" name="QuantityToBook" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd1d2a0e-2639-4cf7-8b3a-9fba34832ca4" />
+                </property>
+                <property Id="5b36dbb9-bc7a-4b32-ac1c-561df4faff0f" name="TicketBookingCost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83021327-2773-4705-af46-b68d23208eab" />
+                </property>
+                <property Id="4dbd3208-763f-490f-8913-e014d64d3e58" name="BookableTours" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af79c81c-d275-4c62-b2cc-3f251de989e3" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="df4e4b2e-6b4b-4be9-acf8-bfc910bee66d" name="UpdateSelectedCustomerTourTickets" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7085526a-224b-4c2d-9d82-389a878d4719" />
+                </operation>
+                <operation Id="747fad24-c8ba-45a8-8772-4c6c02a059d8" name="UpdateCustomerList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0067e22a-7a36-4da4-9c30-7eb96c0f8e6b" />
+                </operation>
+                <operation Id="41184719-946f-47f3-be88-aa626f8a86ff" name="SaveSelectedUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f2545075-7750-4fb9-9789-addc4dc08706" />
+                </operation>
+                <operation Id="181487cb-2d62-40a3-8114-649897e6f8ac" name="DeleteSelectedUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="52e5fdca-c57e-420b-b4d8-a033e225d165" />
+                </operation>
+                <operation Id="a75afd78-a788-4f77-8e9a-b8e70dbdbbd8" name="ToggleGoldSelectedUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="44710f2f-fef9-416c-ac11-60951a8f247a" />
+                </operation>
+                <operation Id="1b2acffd-1c7a-406d-b5c9-0df5e95ffd1d" name="BookTickets" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9ebdf491-e172-4236-aacd-b0f7c36b33f3" />
+                </operation>
+                <operation Id="4f47f650-1b3c-48a3-800f-dbc82cfa1bf0" name="CancelSelectedTicket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="31c82451-78e1-4118-8c6e-4e4f7ef339dc" />
+                </operation>
+                <operation Id="3e921a56-e16a-46cf-8766-c991b3139847" name="AddNewCustomer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8bbc17c4-e84d-4127-a1cc-59073b87c708" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c47164ea-36d9-41be-895f-b791346dd4ef" name="VMTourList" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3deec16c-9bfe-42ac-9317-b10b7b581af9" />
+              <ownedAttributesInternal>
+                <property Id="5ad650c0-d4c7-45df-b62a-a9e2ab5152bc" name="TotalSalePrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c781226d-b809-4f83-a4af-d750c7476956" />
+                </property>
+                <property Id="9b8dd4e0-325f-4173-9017-bec1653b5931" name="SelectedTour" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0c22ba3-145d-4f81-b5bb-a5a927373550" />
+                </property>
+                <property Id="8a5d5aaf-6f10-4096-9271-26dcea0e9f61" name="SelectedTourTickets" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cf01e5c3-5638-4d45-ac2c-a85ccbf15981" />
+                </property>
+                <property Id="b0274bf3-0926-4d99-a64f-356619f3d652" name="SearchStart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="129599f6-ef38-492d-9c39-a3be2e26b43b" />
+                </property>
+                <property Id="50717f63-e641-422a-a84c-13e08d9e3888" name="SearchEnd" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9d19928-94d2-4242-94e1-7572a2f85c05" />
+                </property>
+                <property Id="57db07d4-e9c1-4155-bad2-c3fce0861b38" name="AvailableOnly" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bde60b9d-f2dd-4afa-93c2-213e6b9f7f11" />
+                </property>
+                <property Id="1c6b933a-61f8-4e07-847e-552c6e32214b" name="TourList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="afea136a-2824-464e-acf8-e26c559495e2" />
+                </property>
+                <property Id="a15fde19-7693-428b-93ce-ef4956c6e0c3" name="CoachList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8505349d-dd9a-423f-810f-5e7566536354" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="5e7f0dd7-5db3-4c1b-918a-72e22305bdbe" name="UpdateTourList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="24235fd5-4da2-4f9e-8d2b-e4fb3b4f0d2e" />
+                </operation>
+                <operation Id="7a4b234c-f617-4dc7-be73-3d1e82d60278" name="AddNewTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9ebca3d8-89db-4b1b-aa3d-69c39a729f40" />
+                </operation>
+                <operation Id="00fdc121-2196-4c40-811d-48f1d9e4cfbe" name="SaveSelectedTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0b519a2b-8e28-437a-a6c6-94eda20063bd" />
+                </operation>
+                <operation Id="a1fce66d-a46c-4a52-b353-303640cf3b5a" name="DeleteSelectedTour" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0eb029c2-a4bd-416d-b178-e2d336098b96" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0d21516a-853e-4f9e-aa4c-73c61f941a10" name="VMCoachList" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8e4427d3-3b89-4d4f-8f16-d71c360d3631" />
+              <ownedAttributesInternal>
+                <property Id="3ad3e000-f6f8-43e6-b096-db754f916320" name="CoachList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="38cbbcfe-0306-4c14-9f7b-01c8f4710fd1" />
+                </property>
+                <property Id="f03f7953-ac72-4c2c-a8d2-dd7a47544f5e" name="SelectedCoach" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="db3cb4e4-9c28-4927-a498-21e4bf63890e" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="de6a6d61-c9f5-4ee9-b605-96c42ac9b6a0" name="DeleteSelectedCoach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1764b1de-f142-4334-8028-56a7e325dcb0" />
+                </operation>
+                <operation Id="f31dcd32-21fb-4039-b2f5-d6d9c8563765" name="AddCoach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9eb8e9a5-d872-44f4-9cea-735b60b407e1" />
+                </operation>
+                <operation Id="bac971e5-17d3-4f77-8641-1c475b8c51a9" name="UpdateCoachList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7a6a0b8e-df65-4545-abf7-62a36b55df08" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f4b43253-afd7-450e-8908-cc73b2c8b351" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ed299214-e622-4737-a49b-47b5e2b009cc" />
+              <suppliersInternal>
+                <dependency Id="f69b00e6-8d3b-464b-8bcb-e20f29423939">
+                  <classMoniker Id="0d21516a-853e-4f9e-aa4c-73c61f941a10" LastKnownName="VMCoachList" />
+                  <elementDefinition Id="44728556-d7f2-45ec-b0f8-90c8f5054390" />
+                </dependency>
+                <dependency Id="5bfa6f3e-530b-4fc5-b248-cacf7331fc76">
+                  <classMoniker Id="c47164ea-36d9-41be-895f-b791346dd4ef" LastKnownName="VMTourList" />
+                  <elementDefinition Id="ddec26e6-b179-4ab7-83ad-2283f9cccbb3" />
+                </dependency>
+                <dependency Id="27844d23-3302-4501-bf62-4d4a42ef5c16">
+                  <classMoniker Id="2e7cff4f-79f3-46a1-b071-ad3d7943d423" LastKnownName="VMCustomerList" />
+                  <elementDefinition Id="adfb17f3-376d-4dba-a0e5-893ae42c8199" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="1a3a2895-94cb-46c9-a453-9c27bb73b159" name="PageTitle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5854aa52-d9bb-452a-bbf5-5fd69a1d8aa7" />
+                </property>
+                <property Id="61c3f13a-cb5a-4252-9923-3db2b2812624" name="PageFile" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d538503-9441-4116-971c-a5f8af92f377" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="432839c8-2d6b-4452-b02b-ee84ef6fe10d" name="08220 ACW">
+    <elementDefinition Id="7e2a30a0-5a05-442c-8e31-00f76bbfbf65" />
+  </package>
+</logicalClassDesignerModel>

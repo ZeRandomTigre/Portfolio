@@ -1,0 +1,12 @@
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.dll.config
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.dll
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.dll
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.pdb
+Z:\08346 Distributed Systems\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.csprojResolveAssemblyReference.cache
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.dll.config
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.dll
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\bin\Release\ACW_08346_464814_ServiceLibrary.pdb
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.csprojResolveAssemblyReference.cache
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.dll
+E:\OneDrive\University\3rd Year\08346 Distributed Systems Programming\ACW\ACW_08346_464814\ACW_08346_464814_ServiceLibrary\obj\Release\ACW_08346_464814_ServiceLibrary.pdb

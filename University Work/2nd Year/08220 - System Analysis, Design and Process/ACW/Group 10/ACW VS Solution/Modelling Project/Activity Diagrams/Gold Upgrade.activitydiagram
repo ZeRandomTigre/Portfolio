@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a2ff28ef-2cd8-48a3-a394-c8fe6854a1e5" name="Gold Upgrade" linkedPackageId="a5d6e235-a567-45a7-9485-bafcf4a58cf8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="62111d69-fc7b-43a1-b14a-efcff7dd6e74">
+      <profileInstance Id="b2522ee0-c06e-42db-9a4b-daa3e56371b8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="18c4089e-dfd8-4d75-89aa-90bf84b6482d">
+      <profileInstance Id="743a9877-c0fa-4adf-bb45-0cb2497ac164" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="81990ad9-785b-47ab-95f3-bb74f6b3544c" name="Gold Upgrade" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="64e8813f-42b2-4db1-bad1-853a5ac2f77a" />
+        <nodes>
+          <initialNode Id="a5eaa407-c18e-4a62-8925-080191a36c13" name="Initial1" isLeaf="false">
+            <elementDefinition Id="51272258-22b8-4b3d-ae6d-af82e7327cc4" />
+            <flowNodeTargets>
+              <controlFlow Id="3835fcf3-ce13-45df-92e9-5c64e039a8a4" isLeaf="false">
+                <decisionNodeMoniker Id="16ebeffa-ad04-4c31-89cc-93e3b7fa70c0" LastKnownName="Decision1" />
+                <elementDefinition Id="da1f203b-4f1e-4a74-ae46-8e30ffcb0790" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="57c70cb7-6370-4a10-9f63-829d2869e6bd" name="Pay Membership" isLeaf="false">
+            <elementDefinition Id="0185a7ad-b582-42b8-84b2-adfe25088fc6" />
+            <flowNodeTargets>
+              <controlFlow Id="0b4b875d-1673-4b02-9824-ba916a530f85" isLeaf="false">
+                <opaqueActionMoniker Id="37016b0f-af49-40fc-9010-7b54974d1386" LastKnownName="Upgrade User" />
+                <elementDefinition Id="a97425c3-b5d4-432c-843e-5c38db926a2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c2a85430-4991-44f7-83f1-03d0613a45a2" name="Enter Customer Details" isLeaf="false">
+            <elementDefinition Id="9f570b7e-92f9-46cc-853a-a528b0ccadd7" />
+            <flowNodeTargets>
+              <controlFlow Id="262be8c1-513e-44eb-bcd9-ae96e20a9183" isLeaf="false">
+                <opaqueActionMoniker Id="57c70cb7-6370-4a10-9f63-829d2869e6bd" LastKnownName="Pay Membership" />
+                <elementDefinition Id="42345ad2-f8c4-4f86-9e40-d7b4c9929a66" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="16ebeffa-ad04-4c31-89cc-93e3b7fa70c0" name="Decision1" isLeaf="false">
+            <elementDefinition Id="babd3c98-b689-4c18-8905-26db5144ab7d" />
+            <flowNodeTargets>
+              <controlFlow Id="ace2939f-3081-41f7-b329-d7e57bc130cf" guard="New Customer" isLeaf="false">
+                <opaqueActionMoniker Id="c2a85430-4991-44f7-83f1-03d0613a45a2" LastKnownName="Enter Customer Details" />
+                <elementDefinition Id="0649eb57-b95e-4c1a-a569-00a5256ca774" />
+              </controlFlow>
+              <controlFlow Id="0b34be36-a160-4010-9ecf-d56134821790" guard="Existing Customer" isLeaf="false">
+                <opaqueActionMoniker Id="57c70cb7-6370-4a10-9f63-829d2869e6bd" LastKnownName="Pay Membership" />
+                <elementDefinition Id="8cb45ed6-7096-411e-8846-0596aacf32ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="37016b0f-af49-40fc-9010-7b54974d1386" name="Upgrade User" isLeaf="false">
+            <elementDefinition Id="eb2275cc-2ed0-493f-bee9-b65c9afc7027" />
+            <flowNodeTargets>
+              <controlFlow Id="bed3b453-94b4-4a8c-a494-79f057392357" isLeaf="false">
+                <activityFinalNodeMoniker Id="e81ca740-16d8-41b9-9701-7a75435607e0" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="503f198b-c4c8-4ecd-853c-47a08eae5ba1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e81ca740-16d8-41b9-9701-7a75435607e0" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="b19d1499-46ba-45ad-af70-1c0f019c9b80" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a5d6e235-a567-45a7-9485-bafcf4a58cf8" name="08220 ACW">
+    <elementDefinition Id="7e2a30a0-5a05-442c-8e31-00f76bbfbf65" />
+  </package>
+</activityRootModel>

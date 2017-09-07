@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameScene.cs">
+    <Files>
+      <File FileName="AppMain.cs" Line="17" Column="1" />
+      <File FileName="Ball.cs" Line="1" Column="1" />
+      <File FileName="GameOver.cs" Line="37" Column="41" />
+      <File FileName="GameScene.cs" Line="29" Column="34" />
+      <File FileName="MenuScene.cs" Line="46" Column="4" />
+      <File FileName="Paddle.cs" Line="26" Column="4" />
+      <File FileName="PongPhysics.cs" Line="20" Column="81" />
+      <File FileName="Scoreboard.cs" Line="25" Column="1" />
+      <File FileName="TitleScene.cs" Line="1" Column="1" />
+      <File FileName="Client.cs" Line="171" Column="23" />
+      <File FileName="HighScoreScene.cs" Line="98" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

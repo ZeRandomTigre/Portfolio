@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sean.acw.OptionsActivity">
+
+    <Button
+        android:id="@+id/options_button_clickmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_mode"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/options_button_dragmode"
+        android:layout_alignLeft="@+id/options_button_dragmode"
+        android:layout_alignStart="@+id/options_button_dragmode" />
+
+    <Button
+        android:id="@+id/options_button_dragmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drag_mode"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+

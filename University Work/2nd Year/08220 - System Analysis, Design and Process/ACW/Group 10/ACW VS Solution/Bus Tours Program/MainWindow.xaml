@@ -1,0 +1,51 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Bus_Tours_Program" x:Class="Bus_Tours_Program.MainWindow"
+        Height="768" Width="1024" Title="Wynne's Tours">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="74" />
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.RowSpan="2" Fill="#FF232323"/>
+        <Rectangle Grid.RowSpan="2" HorizontalAlignment="Right" Width="29">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="270" CenterY="0.5" CenterX="0.5"/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#00000000" Offset="0.8"/>
+                    <GradientStop Color="#FF1B1A1A" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Frame Grid.Column="1" Grid.Row="1" Margin="10" Source="{Binding Path=PageFile}" NavigationUIVisibility="Hidden"/>
+        <Label Content="{Binding Path=PageTitle}" Grid.Column="1" Margin="10,0,0,0" FontSize="32" Padding="5" FontFamily="Segoe UI Light"/>
+        <StackPanel HorizontalAlignment="Left" Grid.RowSpan="2" Width="74">
+            <Button x:Name="CustomerButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Margin="13, 5, 13, 5" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="CustomerButton_Click">
+                <StackPanel>
+                    <Image Source="icons/user-48-blue.png" />
+                    <TextBlock Foreground="White" Text="Customers" TextAlignment="Center" FontFamily="Segoe UI Light" FontSize="10"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="TourButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Margin="13, 5, 13, 5" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="TourButton_Click">
+                <StackPanel>
+                    <Image Source="icons/map-48-blue.png" />
+                    <TextBlock Foreground="White" Text="Tours" TextAlignment="Center" FontFamily="Segoe UI Light" FontSize="14"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="CoachButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Margin="13, 5, 13, 5" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="CoachButton_Click">
+            <StackPanel>
+                <Image Source="icons/key-48-blue.png" />
+                <TextBlock Foreground="White" Text="Coaches" TextAlignment="Center" FontFamily="Segoe UI Light" FontSize="12"/>
+            </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

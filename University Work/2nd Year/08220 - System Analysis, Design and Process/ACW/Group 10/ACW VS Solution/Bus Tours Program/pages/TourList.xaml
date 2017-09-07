@@ -1,0 +1,118 @@
+﻿<Page x:Class="Bus_Tours_Program.TourList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+	Title="CustomerList">
+    <Page.Resources>
+        <DataTemplate x:Key="ToursDataTemplate">
+            <Grid Margin="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" SharedSizeGroup="Key" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock FontWeight="Bold" Text="{Binding Path=Title}"></TextBlock>
+                <TextBlock Grid.Row ="1" Grid.Column="0" Text="{Binding Path=Description}" Margin="5, 0, 0, 0"></TextBlock>
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="SelectedTourDataTemplate">
+            <Grid Margin="5,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                    <TextBox Text="{Binding Path=Title, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Width="250" HorizontalAlignment="Left" ></TextBox>
+                </StackPanel>
+
+
+                <WrapPanel Grid.Row="1" Grid.Column="0" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <TextBlock Padding="5">
+                        <Label FontWeight="Bold">Description: </Label>
+                        <TextBox VerticalAlignment="Center" Width="300" Text="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"></TextBox>
+                    </TextBlock>
+                    <TextBlock Padding="5">
+                        <Label FontWeight="Bold">Departure Date: </Label>
+                        <DatePicker Width="100" SelectedDate="{Binding Path=DepartureDateTime, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" />
+                    </TextBlock>
+                    <TextBlock Padding="5">
+                        <Label FontWeight="Bold">Base price: </Label>
+                        <TextBox VerticalAlignment="Center" Width="50" Text="{Binding Path=BaseTicketPrice, StringFormat=C, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"></TextBox>
+                    </TextBlock>
+                    <TextBlock Padding="5">
+                        <Label FontWeight="Bold">Coach: </Label>
+                        <ComboBox ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Page}}, Path=DataContext.CoachList}" SelectedValuePath="ID" SelectedValue="{Binding Path=CoachID}" Width="150">
+                            <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}{0} - {1} Seats">
+                                            <Binding Path="RegistrationNumber"/>
+                                            <Binding Path="NumberOfSeats"/>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </TextBlock>
+                    
+                </WrapPanel>
+                <TextBlock Width="10000" Grid.Row="2" Grid.Column="0" FontWeight="Bold" Margin="5,0,0,0">Tickets:</TextBlock>
+                <ListView MaxHeight="250" Grid.Row="3" Margin="5,0,0,10" ItemsSource="{Binding RelativeSource={RelativeSource AncestorType={x:Type Page}}, Path=DataContext.SelectedTourTickets}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Ticket ID" Width="120" DisplayMemberBinding="{Binding ID}" />
+                            <GridViewColumn Header="Is Sold" Width="50" DisplayMemberBinding="{Binding IsSold}" />
+                            <GridViewColumn Header="Sale Price" Width="120" DisplayMemberBinding="{Binding SalePrice, StringFormat=C}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <TextBlock Grid.Column="0" Grid.Row="4">
+                    <TextBlock FontWeight="Bold">Gross Revenue: </TextBlock>
+                    <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type Page}}, Path=DataContext.TotalSalePrice, StringFormat=C}"></TextBlock>
+                </TextBlock>
+                <StackPanel Grid.Column="0" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <Button Width="150" Height="25" Content="Delete Tour" Margin="5,0,0,10" Click="DeleteSelectedTourBtn_Click"></Button>
+                    <Button Width="150" Height="25" Content="Save Changes" Margin="5,0,0,10" Click="SaveSelectedTourBtn_Click"></Button>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <Style TargetType="{x:Type ListBoxItem}" x:Key="ContainerStyle">
+            <Setter Property="ContentTemplate" Value="{StaticResource ToursDataTemplate}" />
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="ContentTemplate" Value="{StaticResource SelectedTourDataTemplate}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Label Content="Start Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-5,0,0,0"/>
+        <DatePicker HorizontalAlignment="Left" Margin="70,2,0,0" VerticalAlignment="Top" SelectedDate="{Binding Path=SearchStart, Mode=TwoWay}"/>
+        <Label Content="End Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="207,1,0,0"/>
+        <DatePicker HorizontalAlignment="Left" Margin="273,2,0,0" VerticalAlignment="Top" SelectedDate="{Binding Path=SearchEnd, Mode=TwoWay}"/>
+        <ListView x:Name="TourListView" SelectedItem="{Binding Path=SelectedTour, Mode=TwoWay}" Margin="0,35,0,30" ItemsSource="{Binding Path=TourList}" ItemContainerStyle="{StaticResource ContainerStyle}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ToursListView_SelectionChanged">
+        </ListView>
+        <Button x:Name="AddTourButton" Content="Add New Tour" Margin="0,0,0,0" Click="AddTourButton_Click" HorizontalAlignment="Right" Width="130" Height="20" VerticalAlignment="Bottom"/>
+        <CheckBox Content="Only Available" Margin="0,6,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="100" IsChecked="{Binding Path=AvailableOnly, Mode=TwoWay}"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,37 @@
+﻿<Page x:Name="View_Coach1"  x:Class="Bus_Tours_Program.CoachList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+	Title="CoachList">
+    <Grid>
+        <ListView x:Name="CoachListView" SelectedItem="{Binding Path=SelectedCoach, Mode=TwoWay}" Margin="0,1,0,69" ItemsSource="{Binding Path=CoachList}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="CoachListView_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <Grid Margin="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Key" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock FontWeight="Bold">
+                            <TextBlock.Text >
+                                <MultiBinding StringFormat="{}{0} - {1}">
+                                    <Binding Path="RegistrationNumber"/>
+                                    <Binding Path="NumberOfSeats"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="AddCoachButton" Content="Add Coach" Margin="180,0,0,3" Click="AddCoachButton_Click" HorizontalAlignment="Left" Width="80" Height="23" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="NumberOfSeatsTextbox" Margin="103,0,0,2" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="65"/>
+        <TextBox x:Name="RegistrationTextbox" Margin="80,0,0,35" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="88"/>
+        <Button x:Name="DeleteCoachButton" Content="Delete Selected Coach" Margin="0,0,0,35" HorizontalAlignment="Right" Width="129" Height="23" VerticalAlignment="Bottom" Click="DeleteCoachButton_Click" />
+        <Label Content="Number of seats:" Margin="0,0,0,6" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100"/>
+        <Label Content="Registration:" Margin="0,0,0,38" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="76"/>
+    </Grid>
+</Page>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Bus_Tours_Program.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wynne's Tours" Height="350" Width="525">
+    <Grid>
+        <Label Content="Buy Ticket" HorizontalAlignment="Left" Margin="216,22,0,0" VerticalAlignment="Top" Height="31" Width="120"/>
+        <Label Content="Destination" HorizontalAlignment="Left" Height="25" Margin="30,69,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Date (DD/MM/YYYY)" HorizontalAlignment="Left" Height="25" Margin="30,99,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="270,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="270,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <ListBox HorizontalAlignment="Left" Height="98" Margin="30,139,0,0" VerticalAlignment="Top" Width="448"/>
+        <Button Content="Check Availability" HorizontalAlignment="Left" Margin="30,253,0,0" VerticalAlignment="Top" Width="184" Height="25" IsCancel="True"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="270,253,0,0" VerticalAlignment="Top" Width="208" Height="25" IsCancel="True"/>
+
+    </Grid>
+</Window>

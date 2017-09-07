@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6123efbe-f1cd-4327-993d-fa74f3b6620a"
+  name="Bus Tour Program" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="92ecaad5-0613-4708-b617-c2b175af38d8">
+      <packageMoniker
+        Id="fc462e2b-664d-4928-ae33-04bb5454df26"
+        LastKnownName="Database Library"
+        LastKnownLocation="Package_1233.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="75554cee-b0dc-482e-92e1-70a3e0672656"
+        name="TicketTour"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0170612a-ac93-4460-834f-3c69602e396f"
+            name="TourId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2f880a39-a797-439e-bdb8-928a25e10b8e"
+            name="TicketId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7de8ada9-7955-486f-9fa0-34f74853a04c"
+            name="Title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70e78a08-ca0a-48ee-8756-56df52a35a50"
+            name="DepartureDateTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b6b41f13-f8fb-45d3-b032-d0c31d8642c4"
+            name="SalePrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5df6f2f8-b597-417f-8a86-b653093007e4"
+        name="VMCustomerList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f68addb7-cc7c-43ce-92dd-687ea47b0133">
+            <classMoniker
+              Id="75554cee-b0dc-482e-92e1-70a3e0672656"
+              LastKnownName="TicketTour"
+              LastKnownLocation="Package_1234.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="12332ced-8885-4bff-96df-7bc2097263b8"
+            name="SearchString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="383edc96-63b5-4861-b8dc-13041c8cc94d"
+            name="CustomerList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ed60328e-20ac-4123-b845-a843ab041d4e"
+            name="SelectedCustomerTickets"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="27586f93-16d4-49a2-a9ef-8a71c6dec73a"
+            name="SelectedCustomer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="17fabef2-58a7-4220-80ba-879c5729015a"
+            name="SelectedTourToBook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bd1d2a0e-2639-4cf7-8b3a-9fba34832ca4"
+            name="QuantityToBook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="83021327-2773-4705-af46-b68d23208eab"
+            name="TicketBookingCost"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="af79c81c-d275-4c62-b2cc-3f251de989e3"
+            name="BookableTours"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7085526a-224b-4c2d-9d82-389a878d4719"
+            name="UpdateSelectedCustomerTourTickets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0067e22a-7a36-4da4-9c30-7eb96c0f8e6b"
+            name="UpdateCustomerList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f2545075-7750-4fb9-9789-addc4dc08706"
+            name="SaveSelectedUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="52e5fdca-c57e-420b-b4d8-a033e225d165"
+            name="DeleteSelectedUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="44710f2f-fef9-416c-ac11-60951a8f247a"
+            name="ToggleGoldSelectedUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ebdf491-e172-4236-aacd-b0f7c36b33f3"
+            name="BookTickets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="31c82451-78e1-4118-8c6e-4e4f7ef339dc"
+            name="CancelSelectedTicket"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8bbc17c4-e84d-4127-a1cc-59073b87c708"
+            name="AddNewCustomer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3deec16c-9bfe-42ac-9317-b10b7b581af9"
+        name="VMTourList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c781226d-b809-4f83-a4af-d750c7476956"
+            name="TotalSalePrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d0c22ba3-145d-4f81-b5bb-a5a927373550"
+            name="SelectedTour"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cf01e5c3-5638-4d45-ac2c-a85ccbf15981"
+            name="SelectedTourTickets"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="129599f6-ef38-492d-9c39-a3be2e26b43b"
+            name="SearchStart"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b9d19928-94d2-4242-94e1-7572a2f85c05"
+            name="SearchEnd"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bde60b9d-f2dd-4afa-93c2-213e6b9f7f11"
+            name="AvailableOnly"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="afea136a-2824-464e-acf8-e26c559495e2"
+            name="TourList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8505349d-dd9a-423f-810f-5e7566536354"
+            name="CoachList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="24235fd5-4da2-4f9e-8d2b-e4fb3b4f0d2e"
+            name="UpdateTourList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ebca3d8-89db-4b1b-aa3d-69c39a729f40"
+            name="AddNewTour"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0b519a2b-8e28-437a-a6c6-94eda20063bd"
+            name="SaveSelectedTour"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0eb029c2-a4bd-416d-b178-e2d336098b96"
+            name="DeleteSelectedTour"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e4427d3-3b89-4d4f-8f16-d71c360d3631"
+        name="VMCoachList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="38cbbcfe-0306-4c14-9f7b-01c8f4710fd1"
+            name="CoachList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="db3cb4e4-9c28-4927-a498-21e4bf63890e"
+            name="SelectedCoach"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1764b1de-f142-4334-8028-56a7e325dcb0"
+            name="DeleteSelectedCoach"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9eb8e9a5-d872-44f4-9cea-735b60b407e1"
+            name="AddCoach"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7a6a0b8e-df65-4545-abf7-62a36b55df08"
+            name="UpdateCoachList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ed299214-e622-4737-a49b-47b5e2b009cc"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="44728556-d7f2-45ec-b0f8-90c8f5054390">
+            <classMoniker
+              Id="8e4427d3-3b89-4d4f-8f16-d71c360d3631"
+              LastKnownName="VMCoachList"
+              LastKnownLocation="Package_1234.uml" />
+          </dependency>
+          <dependency
+            Id="ddec26e6-b179-4ab7-83ad-2283f9cccbb3">
+            <classMoniker
+              Id="3deec16c-9bfe-42ac-9317-b10b7b581af9"
+              LastKnownName="VMTourList"
+              LastKnownLocation="Package_1234.uml" />
+          </dependency>
+          <dependency
+            Id="adfb17f3-376d-4dba-a0e5-893ae42c8199">
+            <classMoniker
+              Id="5df6f2f8-b597-417f-8a86-b653093007e4"
+              LastKnownName="VMCustomerList"
+              LastKnownLocation="Package_1234.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5854aa52-d9bb-452a-bbf5-5fd69a1d8aa7"
+            name="PageTitle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7d538503-9441-4116-971c-a5f8af92f377"
+            name="PageFile"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

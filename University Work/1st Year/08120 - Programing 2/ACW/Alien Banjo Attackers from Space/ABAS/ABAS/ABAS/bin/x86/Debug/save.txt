@@ -1,0 +1,10 @@
+Player|980.8323|190|2|190|
+Banjo|836.669|97|0|0|1|1|0|plainBanjo
+Banjo|1146.669|69|0|0|1|1|0|plainBanjo
+Banjo|946.6708|51|0|0|1|1|0|plainBanjo
+Banjo|1016.667|136|0|0|1|1|0|plainBanjo
+Banjo|1116.665|149|0|0|1|1|0|plainBanjo
+Banjo|966.6707|91|0|0|1|1|0|plainBanjo
+Banjo|866.6694|75|0|0|1|1|0|plainBanjo
+Banjo|446.6659|50|0|0|1|1|0|plainBanjo
+Banjo|346.6665|93|0|0|1|1|0|plainBanjo

@@ -1,0 +1,12 @@
+Z:\464814\08241\ACW\LocationServer\LocationServer\bin\Debug\LocationServer.exe.config
+Z:\464814\08241\ACW\LocationServer\LocationServer\bin\Debug\LocationServer.exe
+Z:\464814\08241\ACW\LocationServer\LocationServer\bin\Debug\LocationServer.pdb
+Z:\464814\08241\ACW\LocationServer\LocationServer\obj\Debug\LocationServer.csprojResolveAssemblyReference.cache
+Z:\464814\08241\ACW\LocationServer\LocationServer\obj\Debug\LocationServer.exe
+Z:\464814\08241\ACW\LocationServer\LocationServer\obj\Debug\LocationServer.pdb
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\bin\Debug\LocationServer.exe.config
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\obj\Debug\LocationServer.exe
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\obj\Debug\LocationServer.pdb
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\bin\Debug\LocationServer.exe
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\bin\Debug\LocationServer.pdb
+E:\Users\Sean\SkyDrive\Sean\Work\University\2nd Year\08241 - Networking and Games Architecture\08241_ACW\08241_ACW\08241\LocationServer\LocationServer\obj\Debug\LocationServer.csprojResolveAssemblyReference.cache

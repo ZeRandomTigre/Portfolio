@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="16"
+    density="420dpi"
+    format="7"
+    timestamp="630117128120119" >
+
+    <task
+        name="javac"
+        duration="252" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="88" />
+    <task
+        name="verifier"
+        duration="42" />
+
+    <artifact
+        location="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="630117128120119" >
+        <artifact
+            location="E:\University SVN\[08309] SVN\Week4\Lab_4_1_PirateBooty\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
