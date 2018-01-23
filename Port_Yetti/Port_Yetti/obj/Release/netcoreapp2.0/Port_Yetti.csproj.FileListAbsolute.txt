@@ -1,0 +1,12 @@
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.deps.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.runtimeconfig.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.runtimeconfig.dev.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.dll
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.pdb
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.csproj.CoreCompileInputs.cache
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.AssemblyInfoInputs.cache
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.AssemblyInfo.cs
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.dll
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.pdb
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\bin\Release\netcoreapp2.0\Port_Yetti.xml
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\obj\Release\netcoreapp2.0\Port_Yetti.csprojResolveAssemblyReference.cache

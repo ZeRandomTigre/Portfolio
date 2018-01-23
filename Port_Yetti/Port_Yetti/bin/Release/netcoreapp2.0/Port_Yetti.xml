@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Port_Yetti</name>
+    </assembly>
+    <members>
+        <member name="M:Port_Yetti.Controllers.ServiceController.Get">
+            <summary>
+            Get list of Services
+            </summary>
+            <returns>A list of Services</returns>
+            <response code="200">List of Services found</response>
+            <response code="404">List of Services not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.ServiceController.GetById(System.Int32)">
+            <summary>
+            Get a Service by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">Service found</response>
+            <response code="400">Service found</response>
+            <response code="404">Service not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.ServiceController.GetByName(System.String)">
+            <summary>
+            Get a Service by Name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+            <response code="200">Service found</response>
+            <response code="404">Service not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.ServiceController.Post(Port_Yetti.Models.ServicePost)">
+            <summary>
+            Add new Service
+            </summary>
+            <param name="service"></param>
+            <response code="201">Service created</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.ServiceController.Put(Port_Yetti.Models.Service)">
+            <summary>
+            Update an existing Service
+            </summary>
+            <param name="service"></param>
+            <response code="201">Service updated</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.Get">
+            <summary>
+            Get a list of Settings
+            </summary>
+            <returns>A list of Settings</returns>
+            <response code="200">List of Settings found</response>
+            <response code="404">List of Settings not found</response>>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.GetById(System.Int32)">
+            <summary>
+            Get a Setting by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">Setting found</response>
+            <response code="404">Setting not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.GetByValue(System.String)">
+            <summary>
+            Get a Setting by Value
+            </summary>
+            <param name="value"></param>
+            <response code="200">Setting found</response>
+            <response code="400">Invalid entry</response>
+            <response code="404">Setting not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.GetBySettingServiceId(System.Int32,System.Int32)">
+            <summary>
+            Get a Setting by SettingID and ServiceID
+            </summary>
+            <param name="settingId"></param>
+            <param name="serviceId"></param>
+            <returns></returns>
+            <response code="200">Setting found</response>
+            <response code="404">Setting not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.Post(Port_Yetti.Models.SettingPost)">
+            <summary>
+            Add a new Setting
+            </summary>
+            <param name="setting"></param>
+            <response code="201">Setting created</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingController.Put(Port_Yetti.Models.Setting)">
+            <summary>
+            Update an existing Setting
+            </summary>
+            <param name="setting"></param>
+            <response code="201">Setting updated</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingNameController.Get">
+            <summary>
+            Get list of SettingNames
+            </summary>
+            <returns>A list of SettingNames</returns>
+            <response code="200">List of SettingNames found</response>
+            <response code="404">List of SettingNames not found</response>>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingNameController.GetById(System.Int32)">
+            <summary>
+            Get a SettingName by ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">SettingName found</response>
+            <response code="404">SettingName not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingNameController.GetByName(System.String)">
+            <summary>
+            Get a SettingName by Name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+            <response code="200">SettingName found</response>
+            <response code="404">SettingName not found</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingNameController.Post(Port_Yetti.Models.SettingNamePost)">
+            <summary>
+            Add new SettingName
+            </summary>
+            <param name="settingName"></param>
+            <response code="201">SettingName created</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Controllers.SettingNameController.Put(Port_Yetti.Models.SettingName)">
+            <summary>
+            Update an existing SettingName
+            </summary>
+            <param name="settingName"></param>
+            <response code="201">SettingName updated</response>
+            <response code="400">Invalid entry</response>
+        </member>
+        <member name="M:Port_Yetti.Repository.ServiceRepository.GetAll">
+            <summary>
+            Get a list of services
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.ServiceRepository.GetByID(System.Int32)">
+            <summary>
+            Get a service by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.ServiceRepository.GetByName(System.String)">
+            <summary>
+            Get a service by name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.ServiceRepository.AddNew(Port_Yetti.Models.ServicePost)">
+            <summary>
+            Add a service
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.ServiceRepository.Update(Port_Yetti.Models.Service)">
+            <summary>
+            Update an existing service
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingNameRepository.GetAll">
+            <summary>
+            Get a list of  SettingNames
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingNameRepository.GetByID(System.Int32)">
+            <summary>
+            Get a  SettingName by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingNameRepository.GetByName(System.String)">
+            <summary>
+            Get a settingName by name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingNameRepository.AddNew(Port_Yetti.Models.SettingNamePost)">
+            <summary>
+            Add a settingName
+            </summary>
+            <param name="settingName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingNameRepository.Update(Port_Yetti.Models.SettingName)">
+            <summary>
+            Update an existing settingName
+            </summary>
+            <param name="settingName"></param>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.GetAll">
+            <summary>
+            Get a list of settings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.GetByID(System.Int32)">
+            <summary>
+            Get a setting by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.GetByValue(System.String)">
+            <summary>
+            Get a setting by value
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.GetBySettingServiceId(System.Int32,System.Int32)">
+            <summary>
+            Get a setting by SettingNameId and ServiceId
+            </summary>
+            <param name="settingNameId"></param>
+            <param name="serviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.AddNew(Port_Yetti.Models.SettingPost)">
+            <summary>
+            Add a setting
+            </summary>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Port_Yetti.Repository.SettingRepository.Update(Port_Yetti.Models.Setting)">
+            <summary>
+            Update an existing setting
+            </summary>
+            <param name="setting"></param>
+        </member>
+    </members>
+</doc>

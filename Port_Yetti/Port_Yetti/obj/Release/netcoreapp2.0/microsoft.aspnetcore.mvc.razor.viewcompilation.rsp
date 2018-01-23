@@ -1,0 +1,6 @@
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Port_Yetti
+--content-root=C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti
+--file=C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\Views\Shared\Error.cshtml
+--file=C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti\Views\_ViewStart.cshtml

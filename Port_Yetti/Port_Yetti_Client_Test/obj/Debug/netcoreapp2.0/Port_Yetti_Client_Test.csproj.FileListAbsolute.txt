@@ -1,0 +1,14 @@
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.csproj.CoreCompileInputs.cache
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.AssemblyInfoInputs.cache
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.AssemblyInfo.cs
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Port_Yetti_Client_Test.deps.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Port_Yetti_Client_Test.runtimeconfig.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Port_Yetti_Client_Test.runtimeconfig.dev.json
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Port_Yetti_Client_Test.dll
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Microsoft.IdentityModel.Protocols.xml
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\bin\Debug\netcoreapp2.0\Port_Yetti_Client_Test.pdb
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.dll
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.pdb
+C:\Users\sean.phillips\source\repos\Port_Yetti\Port_Yetti_Client_Test\obj\Debug\netcoreapp2.0\Port_Yetti_Client_Test.csprojResolveAssemblyReference.cache
